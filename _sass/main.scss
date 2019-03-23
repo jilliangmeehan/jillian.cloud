@@ -11,7 +11,7 @@ body {
   margin: 8%;
   max-width: 500px;
   min-height: 600px;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -44,7 +44,7 @@ p {
   color: $text-color;
   font-family: $sans-serif-font;
   font-size: 1rem;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 
   &.bio {
     font-size: 1.2rem;
@@ -66,5 +66,5 @@ a {
 }
 
 .container {
-  margin-top: 2em;
+  margin-top: 2rem;
 }
