@@ -1,0 +1,38 @@
+---
+layout: default
+title: jillian g. meehan
+bio: making things on the internet
+description: jillian g. meehan is making things on the internet
+url: https://jillianmeehan.com
+---
+
+<!-- Variables -->
+{% capture lickability %}{% include work/lickability.md %}{% endcapture %}
+{% capture writing %}{% include work/writing.md %}{% endcapture %}
+{% capture newsletter %}{% include work/newsletter.md %}{% endcapture %}
+{% capture websites %}{% include work/websites.md %}{% endcapture %}
+{% capture in-progress %}{% include work/in-progress.md %}{% endcapture %}
+{% capture contact %}{% include work/contact.md %}{% endcapture %}
+
+<!-- Content -->
+<div class="container">
+  <div id="accordion">
+    <h2>lickability</h2>
+    <div class="item"><p>{{ lickability | markdownify }}</p></div>
+
+    <h2>writing</h2>
+    <div class="item"><p>{{ writing | markdownify }}</p></div>
+
+    <h2>newsletter</h2>
+    <div class="item"><p>{{ newsletter | markdownify }}</p></div>
+
+    <h2>websites</h2>
+    <div class="item"><p>{{ websites | markdownify }}</p></div>
+
+    <h2>in-progress</h2>
+    <div class="item"><p>{{ in-progress | markdownify }}</p></div>
+
+    <h2>contact</h2>
+    <div class="item"><p>{{ contact | markdownify }}</p></div>
+  </div>
+</div>

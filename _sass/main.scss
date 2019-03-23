@@ -1,0 +1,70 @@
+$background-color: #FEF8F7;
+$header-color: #EFBAD7;
+$text-color: #333333;
+$hover-color: #a696c8;
+$link-color: #D9D2E8;
+$serif-font: 'Lora';
+$sans-serif-font: 'Karla';
+
+body {
+  background: $background-color;
+  margin: 8%;
+  max-width: 500px;
+  min-height: 600px;
+  font-size: 1.2em;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  color: $header-color;
+  font-family: $serif-font;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: $text-color;
+  font-family: $sans-serif-font;
+  font-size: 2.5rem;
+  line-height: 150%;
+  margin: 0;
+  transition: .5s;
+  -webkit-transition: .5s;
+  position: relative;
+  outline-style: none;
+
+  &:hover {
+    color: $hover-color;
+    cursor: pointer;
+  }
+}
+
+p {
+  color: $text-color;
+  font-family: $sans-serif-font;
+  font-size: 1rem;
+  margin-bottom: 1em;
+
+  &.bio {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+}
+
+a {
+  color: $text-color;
+  font-family: $sans-serif-font;
+  text-decoration: none;
+  box-shadow: inset 0px -2px 0 $link-color, inset 0 -7px 0 $background-color;
+  transition: .2s;
+  -webkit-transition: .2s;
+
+  &:hover {
+    box-shadow: inset 0px -2px 0 $link-color, inset 0 -7px 0 $link-color;
+  }
+}
+
+.container {
+  margin-top: 2em;
+}

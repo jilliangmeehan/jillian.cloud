@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{{ page.title }}</title>
+    <meta charset="utf-8">
+
+    {% include social.html %}
+    {% seo %}
+
+    <!-- Favicon -->
+    <link id="favicon" rel="icon" href="assets/images/favicon.ico">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Lora:700i" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+      {% include header.html %}
+    </header>
+    {{ content }}
+  </body>
+
+  <!-- Fathom Analytics -->
+  {% include fathom.html %}
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script>
+    $( "#accordion" ).accordion({ collapsible: true, active: false, heightStyle: "content" });
+  </script>
+</html>
