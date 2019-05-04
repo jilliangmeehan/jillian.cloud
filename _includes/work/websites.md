@@ -4,4 +4,4 @@
 
 [should i do this project?](https://shouldidoit.glitch.me/) is a handy exercise for figuring out whether or not you should take on a new side project.
 
-I also built [Cassie Burge's portfolio](https://cassieburge.glitch.me/).
+I also built portfolios for [Cassie Burge](https://cassieburge.glitch.me/) and [Summer Farah](https://summerfarah.glitch.me/).
