@@ -3,6 +3,8 @@ $header-color: #DB63A5;
 $text-color: #333333;
 $hover-color: #7760A9;
 $link-color: #D9D2E8;
+$card-color: #F2E7E5;
+$card-hover: #E7D4D0;
 $serif-font: 'Lora';
 $sans-serif-font: 'Karla';
 
@@ -67,4 +69,29 @@ a {
 
 .container {
   margin-top: 2rem;
+}
+
+.card {
+  background-color: $card-color;
+  border-radius: 15px;
+  margin: 15px 0px 15px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: .2s;
+  -webkit-transition: .2s;
+
+  .item { margin: 15px 0px 15px 20px; }
+
+  p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  .link_title {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  &:hover { background-color: $card-hover; }
 }
