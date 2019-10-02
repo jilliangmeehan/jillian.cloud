@@ -1,12 +1,9 @@
-$background-color: #FEF8F7;
-$header-color: #DB63A5;
-$text-color: #333333;
-$hover-color: #7760A9;
-$link-color: #D9D2E8;
-$card-color: #F2E7E5;
-$card-hover: #E7D4D0;
-$serif-font: 'Lora';
-$sans-serif-font: 'Karla';
+$background-color: #FFFFFF;
+$text-color: #000000;
+$card-color: #FEF8F7;
+$card-hover: #F3E9E7;
+$serif-font: 'Source Serif Pro';
+$sans-serif-font: 'Source Sans Pro';
 
 body {
   background: $background-color;
@@ -18,16 +15,14 @@ body {
 }
 
 h1 {
-  color: $header-color;
+  color: $text-color;
   font-family: $serif-font;
-  font-style: italic;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 0;
 }
 
 h2 {
-  color: $text-color;
-  font-family: $sans-serif-font;
+  font-family: $serif-font;
   font-size: 2.5rem;
   line-height: 150%;
   margin: 0;
@@ -36,10 +31,7 @@ h2 {
   position: relative;
   outline-style: none;
 
-  &:hover {
-    color: $hover-color;
-    cursor: pointer;
-  }
+  &:hover { cursor: pointer; }
 }
 
 p {
@@ -58,13 +50,8 @@ a {
   color: $text-color;
   font-family: $sans-serif-font;
   text-decoration: none;
-  box-shadow: inset 0px -2px 0 $link-color, inset 0 -7px 0 $background-color;
   transition: .2s;
   -webkit-transition: .2s;
-
-  &:hover {
-    box-shadow: inset 0px -2px 0 $link-color, inset 0 -7px 0 $link-color;
-  }
 }
 
 .container {
@@ -90,6 +77,7 @@ a {
 
   .link_title {
     font-size: 1.2rem;
+    font-family: $serif-font;
     font-weight: 700;
   }
 

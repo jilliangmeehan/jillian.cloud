@@ -3,6 +3,11 @@
   emoji: ☁️
   url: https://jillianmeehan.com
 
+- title: snax
+  subtitle: a zine about snacks
+  emoji: 🍭
+  url: https://snaxreport.com
+
 - title: give with us
   subtitle: help us donate
   emoji: 💸
@@ -12,16 +17,6 @@
   subtitle: my newsletter
   emoji: 💌
   url: https://letterstosummer.substack.com
-
-- title: laustrology
-  subtitle: no-bullshit astrology
-  emoji: 💫
-  url: https://laustrology.com
-
-- title: snax
-  subtitle: a zine about snacks
-  emoji: 🍭
-  url: https://snaxreport.com
 
 - title: glossier
   subtitle: shop with me
@@ -37,8 +32,3 @@
   subtitle: interview
   emoji: 🌀
   url: https://www.the-bleu.com/interviews/jillian-meehan/
-  
-- title: mejuri event
-  subtitle: august 13
-  emoji: ✨
-  url: https://www.eventbrite.ca/e/mejuri-shopping-night-with-jilliangmeehan-tickets-64386277088
