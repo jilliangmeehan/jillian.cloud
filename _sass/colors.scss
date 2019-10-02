@@ -93,3 +93,38 @@ h2 {
     }
   }
 }
+
+// Cards
+.card {
+  &.peach {
+    background-color: lighten($peach, 3%);
+    &:hover { background-color: $peach; }
+  }
+
+  &.purplecold {
+    background-color: lighten($purplecold, 3%);
+    &:hover { background-color: $purplecold; }
+  }
+
+  &.yellow {
+    background-color: lighten($yellow, 3%);
+    &:hover { background-color: $yellow; }
+  }
+
+  &.blue {
+    background-color: lighten($blue, 3%);
+    &:hover { background-color: $blue; }
+  }
+
+  &.orange {
+    background-color: lighten($orange, 3%);
+    &:hover { background-color: $orange; }
+  }
+
+  &.purplewarm {
+    background-color: lighten($purplewarm, 3%);
+    &:hover { background-color: $purplewarm; }
+  }
+
+
+}

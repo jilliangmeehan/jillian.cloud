@@ -59,7 +59,6 @@ a {
 }
 
 .card {
-  background-color: $card-color;
   border-radius: 15px;
   margin: 15px 0px 15px 0px;
   display: flex;
@@ -80,6 +79,4 @@ a {
     font-family: $serif-font;
     font-weight: 700;
   }
-
-  &:hover { background-color: $card-hover; }
 }

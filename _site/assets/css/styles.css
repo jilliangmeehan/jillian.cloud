@@ -12,11 +12,10 @@ a { color: #000000; font-family: "Source Sans Pro"; text-decoration: none; trans
 
 .container { margin-top: 2rem; }
 
-.card { background-color: #FEF8F7; border-radius: 15px; margin: 15px 0px 15px 0px; display: flex; flex-direction: row; align-items: center; transition: .2s; -webkit-transition: .2s; }
+.card { border-radius: 15px; margin: 15px 0px 15px 0px; display: flex; flex-direction: row; align-items: center; transition: .2s; -webkit-transition: .2s; }
 .card .item { margin: 15px 0px 15px 20px; }
 .card p { margin: 0; font-size: 0.8rem; }
 .card .link_title { font-size: 1.2rem; font-family: "Source Serif Pro"; font-weight: 700; }
-.card:hover { background-color: #F3E9E7; }
 
 h2.peach { color: #F39895; }
 h2.peach:hover { color: #ee6b67; }
@@ -48,3 +47,16 @@ h2.purplewarm:hover { color: #a87cab; }
 
 .purplewarm a { box-shadow: inset 0px -2px 0 #BD9BBF, inset 0 -7px 0 #FFFFFF; }
 .purplewarm a:hover { box-shadow: inset 0px -2px 0 #BD9BBF, inset 0 -7px 0 #BD9BBF; }
+
+.card.peach { background-color: #f5a5a3; }
+.card.peach:hover { background-color: #F39895; }
+.card.purplecold { background-color: #bbaed7; }
+.card.purplecold:hover { background-color: #B2A4D2; }
+.card.yellow { background-color: #ffd09b; }
+.card.yellow:hover { background-color: #FFC98C; }
+.card.blue { background-color: #c2d3e4; }
+.card.blue:hover { background-color: #B7CBDF; }
+.card.orange { background-color: #ffc5b2; }
+.card.orange:hover { background-color: #FFB9A3; }
+.card.purplewarm { background-color: #c3a4c5; }
+.card.purplewarm:hover { background-color: #BD9BBF; }
