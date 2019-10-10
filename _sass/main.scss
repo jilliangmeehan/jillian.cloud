@@ -84,4 +84,5 @@ a {
 @media (prefers-color-scheme: dark) {
   body { background-color: $background-color-dark-mode; }
   h1, p, a { color: $text-color-dark-mode; }
+  .card { color: $text-color; }
 }
