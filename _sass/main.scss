@@ -1,7 +1,7 @@
 $background-color: #FFFFFF;
+$background-color-dark-mode: #232323;
 $text-color: #000000;
-$card-color: #FEF8F7;
-$card-hover: #F3E9E7;
+$text-color-dark-mode: #FFFFFF;
 $serif-font: 'Source Serif Pro';
 $sans-serif-font: 'Source Sans Pro';
 
@@ -79,4 +79,9 @@ a {
     font-family: $serif-font;
     font-weight: 700;
   }
+}
+
+@media (prefers-color-scheme: dark) {
+  body { background-color: $background-color-dark-mode; }
+  h1, p, a { color: $text-color-dark-mode; }
 }
