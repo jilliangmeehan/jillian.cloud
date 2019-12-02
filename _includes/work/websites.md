@@ -4,4 +4,6 @@
 
 [should i do this project?](https://shouldidoit.glitch.me/) is a handy exercise for figuring out whether or not you should take on a new side project.
 
+[quotestuff](https://quotestuff.glitch.me) is a collection of things I've read or heard that stuck with me in some way.
+
 I also built portfolios for [Cassie Burge](https://cassieburge.glitch.me/) and [Summer Farah](https://summerfarah.glitch.me/).
