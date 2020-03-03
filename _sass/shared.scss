@@ -1,0 +1,104 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  animation: bg-gradient 60s ease infinite;
+  background-size: cover;
+  background-position: top left;
+  opacity: 0.75;
+  line-height: 165%;
+}
+
+h1, h2, h3 {
+  font-family: $serif;
+  font-weight: normal;
+}
+h1 { font-size: $large; }
+p {
+  font-family: $sans-serif;
+  font-size: $regular;
+  margin-top: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+p a { animation: underline-gradient 60s ease infinite; }
+.gradient { animation: text-gradient 60s ease infinite; }
+
+.container { margin: 10% 8%; }
+
+section {
+  margin: 15% 0;
+
+  &.head {
+    margin: 2%;
+    max-width: 580px;
+    nav {
+      margin-top: 2rem;
+      ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        li {
+          display: block;
+          float: left;
+          position: relative;
+          font-size: $regular;
+          font-family: $mono;
+          margin-right: 2rem;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+        }
+      }
+    }
+  }
+
+  &.work {
+    .flex {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .item {
+        max-width: 20vw;
+        margin: 2%;
+
+        h2 { font-size: $medium; }
+        p { font-size: $small-ish; }
+        .link-with-arrow {
+          position: relative;
+          transition: ease 0.3s;
+        }
+        .link-with-arrow:after {
+          content: ' →';
+          font-family: $sans-serif;
+          font-weight: 400;
+          position: absolute;
+          opacity: 0;
+          right: -18px;
+          transition: ease 0.3s;
+        }
+        .link-with-arrow:hover:after {
+          opacity: 1;
+          right: -22px;
+        }
+        .links {
+          font-family: $mono;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  margin: 2%;
+  p {
+    font-family: $mono;
+    font-size: $small-ish;
+    animation: text-gradient 60s ease infinite;
+  }
+}

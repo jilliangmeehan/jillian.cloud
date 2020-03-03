@@ -1,0 +1,69 @@
+// Fonts
+
+@font-face {
+  font-family: 'Basis Grotesque Pro';
+  font-weight: 400;
+  src: url('../fonts/BasisGrotesquePro-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  font-weight: 700;
+  src: url('../fonts/Recoleta-Semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Fantasque Sans Mono';
+  font-weight: 400;
+  src: url('../fonts/FantasqueSansMono-Regular.woff2') format('woff2');
+}
+
+$sans-serif: 'Basis Grotesque Pro', sans-serif;
+$serif: 'Recoleta', serif;
+$mono: 'Fantasque Sans Mono', mono;
+
+// Font sizes
+$xxl: 144px;
+$extra-large: 72px;
+$large: 48px;
+$medium-large: 36px;
+$medium: 24px;
+$medium-ish: 20px;
+$regular: 18px;
+$small-ish: 16px;
+$small: 14px;
+
+// Colors
+$orange: #FFB9A3;
+$peach: #F39895;
+$pink: #DDACBC;
+$purple: #BD9BBF;
+$indigo: #8C90BF;
+$light-orange: #FFECE7;
+$light-peach: #FFE4E4;
+$light-pink: #FAE9EE;
+$light-purple: #F1E5F0;
+$light-indigo: #E2E3F0;
+$transparent: rgba(0, 0, 0, 0);
+
+// Gradients
+@keyframes bg-gradient {
+  0%,100%{ background-color: $light-orange }
+  25%{ background-color: $light-peach }
+  50%{ background-color: $light-pink }
+  75%{ background-color: $light-purple }
+}
+
+@keyframes text-gradient {
+  0%,100%{ color: $peach }
+  25%{ color: $pink }
+  50%{ color: $purple }
+  75%{ color: $indigo }
+}
+
+@keyframes underline-gradient {
+  0%,100%{ box-shadow: inset 0px -2px 0 $peach, inset 0 0 0 $transparent }
+  25%{ box-shadow: inset 0px -2px 0 $pink, inset 0 0 0 $transparent }
+  50%{ box-shadow: inset 0px -2px 0 $purple, inset 0 0 0 $transparent }
+  75%{ box-shadow: inset 0px -2px 0 $indigo, inset 0 0 0 $transparent }
+}
