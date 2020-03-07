@@ -24,7 +24,10 @@ a {
   text-decoration: none;
 }
 p a { animation: underline-gradient 60s ease infinite; }
-.gradient { animation: text-gradient 60s ease infinite; }
+.gradient {
+  animation: text-gradient 60s ease infinite;
+  &:hover { border-bottom: dashed 1.8px; }
+}
 
 .container { margin: 10% 8%; }
 
