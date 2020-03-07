@@ -64,17 +64,17 @@ $root-color: text-gradient 60s ease infinite;
 }
 
 @keyframes text-gradient {
-  0%,100%{ color: $peach }
-  25%{ color: $pink }
-  50%{ color: $purple }
-  75%{ color: $indigo }
+  0%,100%{ color: $dark-peach }
+  25%{ color: $dark-pink }
+  50%{ color: $dark-purple }
+  75%{ color: $dark-indigo }
 }
 
 @keyframes underline-gradient {
-  0%,100%{ border-bottom-color: $peach }
-  25%{ border-bottom-color: $pink }
-  50%{ border-bottom-color: $purple }
-  75%{ border-bottom-color: $indigo }
+  0%,100%{ border-bottom-color: $dark-peach }
+  25%{ border-bottom-color: $dark-pink }
+  50%{ border-bottom-color: $dark-purple }
+  75%{ border-bottom-color: $dark-indigo }
 }
 
 // Responsive text mixin

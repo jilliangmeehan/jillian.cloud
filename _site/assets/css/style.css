@@ -6,14 +6,14 @@
   25% { background-color: #FFE4E4; }
   50% { background-color: #FAE9EE; }
   75% { background-color: #F1E5F0; } }
-@keyframes text-gradient { 0%,100% { color: #F39895; }
-  25% { color: #DDACBC; }
-  50% { color: #BD9BBF; }
-  75% { color: #8C90BF; } }
-@keyframes underline-gradient { 0%,100% { border-bottom-color: #F39895; }
-  25% { border-bottom-color: #DDACBC; }
-  50% { border-bottom-color: #BD9BBF; }
-  75% { border-bottom-color: #8C90BF; } }
+@keyframes text-gradient { 0%,100% { color: #FE4A4B; }
+  25% { color: #D47292; }
+  50% { color: #9D589B; }
+  75% { color: #45489C; } }
+@keyframes underline-gradient { 0%,100% { border-bottom-color: #FE4A4B; }
+  25% { border-bottom-color: #D47292; }
+  50% { border-bottom-color: #9D589B; }
+  75% { border-bottom-color: #45489C; } }
 body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; animation: bg-gradient 60s ease infinite; background-size: cover; background-position: top left; opacity: 0.75; }
 
 h1, h2, h3 { font-family: "Recoleta", serif; font-weight: normal; line-height: 0.5; }
