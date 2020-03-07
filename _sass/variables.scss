@@ -62,8 +62,33 @@ $transparent: rgba(0, 0, 0, 0);
 }
 
 @keyframes underline-gradient {
-  0%,100%{ box-shadow: inset 0px -2px 0 $peach, inset 0 0 0 $transparent }
-  25%{ box-shadow: inset 0px -2px 0 $pink, inset 0 0 0 $transparent }
-  50%{ box-shadow: inset 0px -2px 0 $purple, inset 0 0 0 $transparent }
-  75%{ box-shadow: inset 0px -2px 0 $indigo, inset 0 0 0 $transparent }
+  0%,100%{ box-shadow: inset 0px -7px 0px $peach, inset 0 0 0 $transparent }
+  25%{ box-shadow: inset 0px -7px 0 $pink, inset 0 0 0 $transparent }
+  50%{ box-shadow: inset 0px -7px 0 $purple, inset 0 0 0 $transparent }
+  75%{ box-shadow: inset 0px -7px 0 $indigo, inset 0 0 0 $transparent }
+}
+
+// Responsive text mixin
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+
+  @if $fallback {
+    font-size: $fallback;
+  }
+
+  font-size: $responsive;
 }
