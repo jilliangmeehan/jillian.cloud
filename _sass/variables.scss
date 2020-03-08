@@ -70,6 +70,13 @@ $root-color: text-gradient 60s ease infinite;
   75%{ color: $dark-indigo }
 }
 
+@keyframes stroke-gradient {
+  0%,100%{ stroke: $peach }
+  25%{ stroke: $pink }
+  50%{ stroke: $purple }
+  75%{ stroke: $indigo }
+}
+
 @keyframes underline-gradient {
   0%,100%{ border-bottom-color: $dark-peach }
   25%{ border-bottom-color: $dark-pink }

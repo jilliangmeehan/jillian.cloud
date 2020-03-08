@@ -24,9 +24,26 @@ a {
   text-decoration: none;
 }
 p a {
-  border-bottom: 1.8px solid;
-  animation: underline-gradient 60s ease infinite;
-  &:hover { color: #333333; }
+  position: relative;
+
+  svg {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    width: 90%;
+    height: 120%;
+
+    .underline {
+      stroke-width: 8%;
+      stroke-linecap: round;
+      animation: stroke-gradient 60s ease infinite;
+      transition: stroke-width 0.2s ease;
+    }
+  }
+}
+
+a:hover .underline {
+  stroke-width: 10%;
 }
 
 .gradient {
