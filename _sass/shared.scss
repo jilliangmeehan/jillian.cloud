@@ -42,10 +42,6 @@ p a {
   }
 }
 
-a:hover .underline {
-  stroke-width: 10%;
-}
-
 .gradient {
   animation: text-gradient 60s ease infinite;
   &:hover { border-bottom: 1.8px solid; }
@@ -79,6 +75,16 @@ section {
           }
 
         }
+      }
+    }
+    a {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      .letter {
+        color: blue;
+        display: inline-block;
+        line-height: 1em;
       }
     }
   }

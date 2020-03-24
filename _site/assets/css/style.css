@@ -36,8 +36,6 @@ p a { position: relative; }
 p a svg { z-index: -1; position: absolute; left: 0; width: 90%; height: 120%; }
 p a svg .underline { stroke-width: 8%; stroke-linecap: round; animation: stroke-gradient 60s ease infinite; transition: stroke-width 0.2s ease; }
 
-a:hover .underline { stroke-width: 10%; }
-
 .gradient { animation: text-gradient 60s ease infinite; }
 .gradient:hover { border-bottom: 1.8px solid; }
 
@@ -51,6 +49,8 @@ section.head nav ul li { display: block; float: left; position: relative; font-s
 @media (max-width: 533.3333333333px) { section.head nav ul li { font-size: 16px; } }
 @media (min-width: 666.6666666667px) { section.head nav ul li { font-size: 20px; } }
 section.head nav ul li:hover { cursor: pointer; }
+section.head a { position: relative; display: inline-block; overflow: hidden; }
+section.head a .letter { color: blue; display: inline-block; line-height: 1em; }
 section.work .flex { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; }
 section.work .flex .item { max-width: 60vw; margin: 2%; }
 section.work .flex .item h2 { font-size: 24px; font-size: 1.8vw; }
