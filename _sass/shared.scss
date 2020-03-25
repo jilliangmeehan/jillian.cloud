@@ -25,7 +25,14 @@ a {
 }
 p a {
   position: relative;
-
+  display: inline-block;
+  background-image: url('../underline.svg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
   svg {
     z-index: -1;
     position: absolute;
@@ -80,9 +87,7 @@ section {
     a {
       position: relative;
       display: inline-block;
-      overflow: hidden;
       .letter {
-        color: blue;
         display: inline-block;
         line-height: 1em;
       }
