@@ -23,13 +23,19 @@ link.forEach(
     // Animatation
     var animation = anime({
       targets: item.querySelectorAll(".letter"),
-      translateY: [0, "-0.16em", 0],
+      translateY: [0, "0.07em", 0],
       translateZ: 0,
-      duration: 1000,
-      easing: 'easeInOutBack',
+      scale: [1, 0.95, 1],
+      duration: 400,
+      easing: 'easeInOutSine',
       delay: anime.stagger(50),
+      endDelay: 1200,
       loop: true,
       autoplay: false
     });
   },
 );
+
+var rootColor = {
+  progress: '0%',
+}

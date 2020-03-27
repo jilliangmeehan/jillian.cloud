@@ -10,32 +10,23 @@
   25% { color: #D47292; }
   50% { color: #9D589B; }
   75% { color: #45489C; } }
-@keyframes stroke-gradient { 0%,100% { stroke: #F39895; }
-  25% { stroke: #DDACBC; }
-  50% { stroke: #BD9BBF; }
-  75% { stroke: #8C90BF; } }
-@keyframes underline-gradient { 0%,100% { border-bottom-color: #FE4A4B; }
-  25% { border-bottom-color: #D47292; }
-  50% { border-bottom-color: #9D589B; }
-  75% { border-bottom-color: #45489C; } }
+@keyframes mask-gradient { 0%,100% { background: #F39895; }
+  25% { background: #DDACBC; }
+  50% { background: #BD9BBF; }
+  75% { background: #8C90BF; } }
 body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; animation: bg-gradient 60s ease infinite; background-size: cover; background-position: top left; opacity: 0.75; }
 
 h1, h2, h3 { font-family: "Recoleta", serif; font-weight: normal; line-height: 0.5; }
 
-h1 { font-size: 24px; font-size: 5vw; }
-@media (max-width: 480px) { h1 { font-size: 24px; } }
-@media (min-width: 960px) { h1 { font-size: 48px; } }
-
-p { font-family: "Basis Grotesque Pro", sans-serif; font-size: 18px; font-size: 3vw; margin-top: 0; line-height: 1.6; }
+p { font-family: "Basis Grotesque Pro", sans-serif; margin-top: 0; line-height: 1.6; font-size: 18px; font-size: 3vw; }
 @media (max-width: 533.3333333333px) { p { font-size: 16px; } }
 @media (min-width: 666.6666666667px) { p { font-size: 20px; } }
 
 a { color: black; text-decoration: none; }
 
-p a { position: relative; display: inline-block; background-image: url("../underline.svg"); background-repeat: no-repeat; background-position: bottom center; }
+p a { position: relative; display: inline-block; }
+p a:before { content: ''; position: absolute; width: 112%; height: 100%; top: 0; left: -6%; z-index: -1; -webkit-mask-image: url("../underline.svg"); animation: mask-gradient 60s ease infinite; }
 p a .letter { display: inline-block; line-height: 1em; }
-p a svg { z-index: -1; position: absolute; left: 0; width: 90%; height: 120%; }
-p a svg .underline { stroke-width: 8%; stroke-linecap: round; animation: stroke-gradient 60s ease infinite; transition: stroke-width 0.2s ease; }
 
 .gradient { animation: text-gradient 60s ease infinite; }
 .gradient:hover { text-decoration: underline; }
@@ -44,12 +35,14 @@ p a svg .underline { stroke-width: 8%; stroke-linecap: round; animation: stroke-
 
 section { margin: 15% 0; }
 section.head { margin: 2%; padding-top: 2%; max-width: 580px; }
+section.head h1 { font-size: 24px; font-size: 5vw; }
+@media (max-width: 480px) { section.head h1 { font-size: 24px; } }
+@media (min-width: 960px) { section.head h1 { font-size: 48px; } }
 section.head nav { margin-top: 2rem; }
 section.head nav ul { list-style: none; margin: 0; padding-left: 0; }
-section.head nav ul li { display: block; float: left; position: relative; font-size: 18px; font-size: 3vw; font-family: "Fantasque Sans Mono", mono; margin-right: 2rem; }
+section.head nav ul li { font-family: "Fantasque Sans Mono", mono; margin-right: 2rem; display: block; float: left; position: relative; font-size: 18px; font-size: 3vw; }
 @media (max-width: 533.3333333333px) { section.head nav ul li { font-size: 16px; } }
 @media (min-width: 666.6666666667px) { section.head nav ul li { font-size: 20px; } }
-section.head nav ul li:hover { cursor: pointer; }
 section.head a { position: relative; display: inline-block; }
 section.head a .letter { display: inline-block; line-height: 1em; }
 section.work .flex { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; }
@@ -61,8 +54,8 @@ section.work .flex .item p { font-size: 16px; font-size: 1.2vw; }
 @media (max-width: 1333.3333333333px) { section.work .flex .item p { font-size: 16px; } }
 @media (min-width: 1500px) { section.work .flex .item p { font-size: 18px; } }
 section.work .flex .item .link-with-arrow { position: relative; transition: ease 0.3s; }
-section.work .flex .item .link-with-arrow:after { content: ' →'; font-family: "Basis Grotesque Pro", sans-serif; font-weight: 400; position: absolute; opacity: 0; right: -18px; transition: ease 0.3s; }
-section.work .flex .item .link-with-arrow:hover:after { opacity: 1; right: -22px; }
+section.work .flex .item .link-with-arrow:after { content: ' →'; font-family: "Basis Grotesque Pro", sans-serif; font-weight: 400; position: relative; opacity: 0; left: 2px; transition: ease 0.3s; }
+section.work .flex .item .link-with-arrow:hover:after { opacity: 1; left: 4px; }
 section.work .flex .item .links { font-family: "Fantasque Sans Mono", mono; }
 
 footer { margin: 2%; }

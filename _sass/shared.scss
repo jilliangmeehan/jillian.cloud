@@ -12,12 +12,11 @@ h1, h2, h3 {
   font-weight: normal;
   line-height: 0.5;
 }
-h1 { @include responsive-font(5vw, $medium, $large, $medium); }
 p {
   font-family: $sans-serif;
-  @include responsive-font(3vw, $small-ish, $medium-ish, $regular);
   margin-top: 0;
   line-height: 1.6;
+  @include responsive-font(3vw, $small-ish, $medium-ish, $regular);
 }
 a {
   color: black;
@@ -26,26 +25,21 @@ a {
 p a {
   position: relative;
   display: inline-block;
-  background-image: url('../underline.svg');
-  background-repeat: no-repeat;
-  background-position: bottom center;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 112%;
+    height: 100%;
+    top: 0;
+    left: -6%;
+    z-index: -1;
+    -webkit-mask-image: url('../underline.svg');
+    animation: mask-gradient 60s ease infinite;
+  }
   .letter {
     display: inline-block;
     line-height: 1em;
-  }
-  svg {
-    z-index: -1;
-    position: absolute;
-    left: 0;
-    width: 90%;
-    height: 120%;
-
-    .underline {
-      stroke-width: 8%;
-      stroke-linecap: round;
-      animation: stroke-gradient 60s ease infinite;
-      transition: stroke-width 0.2s ease;
-    }
   }
 }
 
@@ -63,6 +57,7 @@ section {
     margin: 2%;
     padding-top: 2%;
     max-width: 580px;
+    h1 { @include responsive-font(5vw, $medium, $large, $medium); }
     nav {
       margin-top: 2rem;
       ul {
@@ -70,17 +65,12 @@ section {
         margin: 0;
         padding-left: 0;
         li {
+          font-family: $mono;
+          margin-right: 2rem;
           display: block;
           float: left;
           position: relative;
           @include responsive-font(3vw, $small-ish, $medium-ish, $regular);
-          font-family: $mono;
-          margin-right: 2rem;
-
-          &:hover {
-            cursor: pointer;
-          }
-
         }
       }
     }
@@ -115,18 +105,17 @@ section {
           content: ' →';
           font-family: $sans-serif;
           font-weight: 400;
-          position: absolute;
+          position: relative;
           opacity: 0;
-          right: -18px;
+          left: 2px;
+          //right: -18px;
           transition: ease 0.3s;
         }
         .link-with-arrow:hover:after {
           opacity: 1;
-          right: -22px;
+          left: 4px;
         }
-        .links {
-          font-family: $mono;
-        }
+        .links { font-family: $mono; }
       }
     }
   }
@@ -141,24 +130,14 @@ footer {
   }
 }
 
-@media screen and (min-width: 500px) {
-  //body { border: 2px solid red; }
-}
-
 @media screen and (min-width: 740px) {
-  //body { border: 2px solid green; }
   section.work .flex {
     .item { max-width: 30vw; }
   }
 }
 
 @media screen and (min-width: 980px) {
-  //body { border: 2px solid purple; }
   section.work .flex {
     .item { max-width: 20vw; }
   }
-}
-
-@media screen and (min-width: 1200px) {
-  //body { border: 2px solid blue; }
 }
