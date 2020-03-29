@@ -19,13 +19,16 @@ p {
   @include responsive-font(3vw, $small-ish, $medium-ish, $regular);
 }
 a {
-  color: black;
-  text-decoration: none;
-}
-p a {
   position: relative;
   display: inline-block;
-
+  color: black;
+  text-decoration: none;
+  .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+}
+p a {
   &:before {
     content: '';
     position: absolute;
@@ -37,26 +40,21 @@ p a {
     -webkit-mask-image: url('../underline.svg');
     animation: mask-gradient 60s ease infinite;
   }
-  .letter {
-    display: inline-block;
-    line-height: 1em;
-  }
 }
-
-.gradient {
+.gradient-link {
+  font-family: $mono;
   animation: text-gradient 60s ease infinite;
-  &:hover { text-decoration: underline; }
 }
 
 .container { margin: 10% 8%; }
 
 section {
-  margin: 15% 0;
+  margin: 12vh 0;
 
   &.head {
     margin: 2%;
     padding-top: 2%;
-    max-width: 580px;
+    max-width: 600px;
     h1 { @include responsive-font(5vw, $medium, $large, $medium); }
     nav {
       margin-top: 2rem;
@@ -115,7 +113,6 @@ section {
           opacity: 1;
           left: 4px;
         }
-        .links { font-family: $mono; }
       }
     }
   }

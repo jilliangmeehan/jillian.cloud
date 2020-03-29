@@ -1,5 +1,5 @@
 // Find all links in the body of a paragraph
-var link = document.querySelectorAll("p a");
+var link = document.querySelectorAll("a:not(.link-with-arrow)");
 
 link.forEach(
   function(item) {
@@ -23,7 +23,7 @@ link.forEach(
     // Animatation
     var animation = anime({
       targets: item.querySelectorAll(".letter"),
-      translateY: [0, "0.07em", 0],
+      translateY: [0, "0.05em", "-0.03em", 0],
       translateZ: 0,
       scale: [1, 0.95, 1],
       duration: 400,
