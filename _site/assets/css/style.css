@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @font-face { font-family: 'Basis Grotesque Pro'; font-weight: 400; src: url("../fonts/BasisGrotesquePro-Regular.woff2") format("woff2"); }
+@font-face { font-family: 'Basis Grotesque Pro'; font-weight: 400; font-style: italic; src: url("../fonts/BasisGrotesqueProRegularItalic.woff2") format("woff2"); }
+@font-face { font-family: 'Basis Grotesque Pro'; font-weight: 600; src: url("../fonts/BasisGrotesqueProMedium.woff2") format("woff2"); }
+@font-face { font-family: 'Basis Grotesque Pro'; font-weight: 600; font-style: italic; src: url("../fonts/BasisGrotesqueProMediumItalic.woff2") format("woff2"); }
 @font-face { font-family: 'Recoleta'; font-weight: 700; src: url("../fonts/Recoleta-Semibold.woff2") format("woff2"); }
 @font-face { font-family: 'Fantasque Sans Mono'; font-weight: 400; src: url("../fonts/FantasqueSansMono-Regular.woff2") format("woff2"); }
 @keyframes bg-gradient { 0%,100% { background-color: #FFECE7; }
@@ -18,7 +21,7 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
 
 h1, h2, h3 { font-family: "Recoleta", serif; font-weight: normal; line-height: 0.5; }
 
-p { font-family: "Basis Grotesque Pro", sans-serif; margin-top: 0; line-height: 1.6; font-size: 18px; font-size: 3vw; }
+p { font-family: "Basis Grotesque Pro", "Avenir", sans-serif; margin-top: 0; line-height: 1.6; font-size: 18px; font-size: 3vw; }
 @media (max-width: 533.3333333333px) { p { font-size: 16px; } }
 @media (min-width: 666.6666666667px) { p { font-size: 20px; } }
 
@@ -52,7 +55,7 @@ section.work .flex .item p { font-size: 16px; font-size: 1.2vw; }
 @media (max-width: 1333.3333333333px) { section.work .flex .item p { font-size: 16px; } }
 @media (min-width: 1500px) { section.work .flex .item p { font-size: 18px; } }
 section.work .flex .item .link-with-arrow { position: relative; transition: ease 0.3s; }
-section.work .flex .item .link-with-arrow:after { content: ' →'; font-family: "Basis Grotesque Pro", sans-serif; font-weight: 400; position: relative; opacity: 0; left: 2px; transition: ease 0.3s; }
+section.work .flex .item .link-with-arrow:after { content: ' →'; font-family: "Basis Grotesque Pro", "Avenir", sans-serif; font-weight: 400; position: relative; opacity: 0; left: 2px; transition: ease 0.3s; }
 section.work .flex .item .link-with-arrow:hover:after { opacity: 1; left: 4px; }
 
 footer { margin: 2%; }

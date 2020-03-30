@@ -35,7 +35,3 @@ link.forEach(
     });
   },
 );
-
-var rootColor = {
-  progress: '0%',
-}

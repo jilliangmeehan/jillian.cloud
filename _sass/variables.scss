@@ -7,6 +7,26 @@
 }
 
 @font-face {
+  font-family: 'Basis Grotesque Pro';
+  font-weight: 400;
+  font-style: italic;
+  src: url('../fonts/BasisGrotesqueProRegularItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Basis Grotesque Pro';
+  font-weight: 600;
+  src: url('../fonts/BasisGrotesqueProMedium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Basis Grotesque Pro';
+  font-weight: 600;
+  font-style: italic;
+  src: url('../fonts/BasisGrotesqueProMediumItalic.woff2') format('woff2');
+}
+
+@font-face {
   font-family: 'Recoleta';
   font-weight: 700;
   src: url('../fonts/Recoleta-Semibold.woff2') format('woff2');
@@ -18,7 +38,7 @@
   src: url('../fonts/FantasqueSansMono-Regular.woff2') format('woff2');
 }
 
-$sans-serif: 'Basis Grotesque Pro', sans-serif;
+$sans-serif: 'Basis Grotesque Pro', 'Avenir', sans-serif;
 $serif: 'Recoleta', serif;
 $mono: 'Fantasque Sans Mono', mono;
 
