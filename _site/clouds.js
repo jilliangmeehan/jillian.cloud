@@ -7,8 +7,8 @@ link.forEach(
     Splitting({
       target: item,
       by: "chars",
-    }).forEach(item => {
-      item.words.forEach(word => {
+    }).forEach(split => {
+      split.words.forEach(word => {
         if (word.parentElement.getAttribute("aria-label")) {
           word.setAttribute("aria-hidden", true);
         }
@@ -26,9 +26,8 @@ link.forEach(
       animation.seek(0);
     };
 
-    // Animatation
     var animation = anime({
-      targets: item.querySelectorAll(".char"),
+      targets: item.querySelectorAll('.char'),
       translateY: [0, "0.05em", "-0.03em", 0],
       translateZ: 0,
       scale: [1, 0.95, 1],

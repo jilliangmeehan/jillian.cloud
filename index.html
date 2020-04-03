@@ -26,7 +26,7 @@ bio: I'm a Project Manager at [Lickability](https://lickability.com), a ten-pers
         <p>{{ item.description | markdownify }}</p>
         {% if item.l1-url %}
           <div class="links">
-            <a aria-label="{{ item.l1-copy }}" role="document" class="gradient-link" href="{{ item.l1-url }}">{{ item.l1-copy }}</a>
+            <a aria-label="{{ item.l1-copy }}" role="link" class="gradient-link" href="{{ item.l1-url }}">{{ item.l1-copy }}</a>
           </div>
         {% endif %}
       </div>
