@@ -13,6 +13,7 @@ bio: I'm a Project Manager at [Lickability](https://lickability.com), a ten-pers
     </nav>
   </section>
 
+
   <section class="work">
     <div class="flex">
       {% for item in site.data.work %}
@@ -25,7 +26,7 @@ bio: I'm a Project Manager at [Lickability](https://lickability.com), a ten-pers
         <p>{{ item.description | markdownify }}</p>
         {% if item.l1-url %}
           <div class="links">
-            <a class="gradient-link" href="{{ item.l1-url }}">{{ item.l1-copy }}</a>
+            <a aria-label="{{ item.l1-copy }}" role="document" class="gradient-link" href="{{ item.l1-url }}">{{ item.l1-copy }}</a>
           </div>
         {% endif %}
       </div>
@@ -33,7 +34,3 @@ bio: I'm a Project Manager at [Lickability](https://lickability.com), a ten-pers
     </div>
   </section>
 </div>
-
-<!--<footer>
-  <p>☁️ Thanks for visiting!</p>
-</footer>-->

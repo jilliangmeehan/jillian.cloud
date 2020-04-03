@@ -4,10 +4,16 @@ var link = document.querySelectorAll("a:not(.link-with-arrow)");
 link.forEach(
   function(item) {
     // Wrap each letter in a span
-    item.innerHTML = item.textContent.replace(
-      /\S/g,
-      "<span class='letter'>$&</span>"
-    );
+    Splitting({
+      target: item,
+      by: "chars",
+    }).forEach(item => {
+      item.words.forEach(word => {
+        if (word.parentElement.getAttribute("aria-label")) {
+          word.setAttribute("aria-hidden", true);
+        }
+      });
+    });
 
     // Play animation on hover
     item.onmouseenter = function() {
@@ -22,7 +28,7 @@ link.forEach(
 
     // Animatation
     var animation = anime({
-      targets: item.querySelectorAll(".letter"),
+      targets: item.querySelectorAll(".char"),
       translateY: [0, "0.05em", "-0.03em", 0],
       translateZ: 0,
       scale: [1, 0.95, 1],
@@ -33,5 +39,4 @@ link.forEach(
       loop: true,
       autoplay: false
     });
-  },
-);
+  });
