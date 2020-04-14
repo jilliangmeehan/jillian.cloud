@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@font-face { font-family: 'Basis Grotesque Pro'; font-weight: 400; src: url("../fonts/BasisGrotesquePro-Regular.woff2") format("woff2"); }
-@font-face { font-family: 'Basis Grotesque Pro'; font-weight: 400; font-style: italic; src: url("../fonts/BasisGrotesqueProRegularItalic.woff2") format("woff2"); }
-@font-face { font-family: 'Basis Grotesque Pro'; font-weight: 600; src: url("../fonts/BasisGrotesqueProMedium.woff2") format("woff2"); }
-@font-face { font-family: 'Basis Grotesque Pro'; font-weight: 600; font-style: italic; src: url("../fonts/BasisGrotesqueProMediumItalic.woff2") format("woff2"); }
+@font-face { font-family: 'Open Sauce'; font-weight: 400; src: url("../fonts/OpenSauceSans-One.woff") format("woff"); src: url("../fonts/OpenSauceSans-One.woff2") format("woff2"); }
+@font-face { font-family: 'Open Sauce'; font-weight: 400; font-style: italic; src: url("../fonts/OpenSauceSans-Italic.woff") format("woff"); src: url("../fonts/OpenSauceSans-Italic.woff2") format("woff2"); }
+@font-face { font-family: 'Open Sauce'; font-weight: 600; src: url("../fonts/OpenSauceSans-Medium.woff") format("woff"); src: url("../fonts/OpenSauceSans-Medium.woff2") format("woff2"); }
+@font-face { font-family: 'Open Sauce'; font-weight: 600; font-style: italic; src: url("../fonts/OpenSauceSans-SemiBoldItalic.ttf") format("ttf"); }
 @font-face { font-family: 'Recoleta'; font-weight: 700; src: url("../fonts/Recoleta-Semibold.woff2") format("woff2"); }
 @font-face { font-family: 'Fantasque Sans Mono'; font-weight: 400; src: url("../fonts/FantasqueSansMono-Regular.woff2") format("woff2"); }
 @keyframes bg-gradient { 0%,100% { background-color: #FFECE7; }
@@ -19,11 +19,11 @@
   75% { background: #8C90BF; } }
 body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; animation: bg-gradient 60s ease infinite; background-size: cover; background-position: top left; opacity: 0.75; }
 
-h1, h2, h3 { font-family: "Recoleta", serif; font-weight: normal; line-height: 0.5; }
+h1, h2 { font-family: "Recoleta", serif; font-weight: normal; line-height: 0.5; }
 
-p { font-family: "Basis Grotesque Pro", "Avenir", sans-serif; margin-top: 0; line-height: 1.6; font-size: 18px; font-size: 3vw; }
-@media (max-width: 533.3333333333px) { p { font-size: 16px; } }
-@media (min-width: 666.6666666667px) { p { font-size: 20px; } }
+p { font-family: "Open Sauce", "Avenir", sans-serif; margin-top: 0; line-height: 1.8; font-size: 18px; font-size: 2.5vw; }
+@media (max-width: 640px) { p { font-size: 16px; } }
+@media (min-width: 720px) { p { font-size: 18px; } }
 
 a { position: relative; display: inline-block; color: black; text-decoration: none; }
 a .letter { display: inline-block; line-height: 1em; }
@@ -46,16 +46,19 @@ section.head nav ul li { font-family: "Fantasque Sans Mono", mono; margin-right:
 @media (min-width: 666.6666666667px) { section.head nav ul li { font-size: 20px; } }
 section.head a { position: relative; display: inline-block; }
 section.head a .letter { display: inline-block; line-height: 1em; }
+section.work { position: relative; }
+section.work header { position: absolute; top: calc(12vh + 10%); left: -8%; -webkit-transform-origin: 0 0; -moz-transform-origin: 0 0; -ms-transform-origin: 0 0; -o-transform-origin: 0 0; -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); }
+section.work header h3 { margin: 0; opacity: 0.5; font-family: "Fantasque Sans Mono", mono; font-size: 36px; animation: text-gradient 60s ease infinite; }
 section.work .flex { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; }
-section.work .flex .item { max-width: 60vw; margin: 2%; }
+section.work .flex .item { max-width: 60vw; margin: 2%; padding: 2rem 0; }
 section.work .flex .item h2 { font-size: 24px; font-size: 1.8vw; }
 @media (max-width: 1111.1111111111px) { section.work .flex .item h2 { font-size: 20px; } }
 @media (min-width: 2000px) { section.work .flex .item h2 { font-size: 36px; } }
-section.work .flex .item p { font-size: 16px; font-size: 1.2vw; }
-@media (max-width: 1333.3333333333px) { section.work .flex .item p { font-size: 16px; } }
-@media (min-width: 1500px) { section.work .flex .item p { font-size: 18px; } }
+section.work .flex .item p { font-size: 16px; font-size: 0.6vw; }
+@media (max-width: 2666.6666666667px) { section.work .flex .item p { font-size: 16px; } }
+@media (min-width: 3000px) { section.work .flex .item p { font-size: 18px; } }
 section.work .flex .item .link-with-arrow { position: relative; transition: ease 0.3s; }
-section.work .flex .item .link-with-arrow:after { content: ' →'; font-family: "Basis Grotesque Pro", "Avenir", sans-serif; font-weight: 400; position: relative; opacity: 0; left: 2px; transition: ease 0.3s; }
+section.work .flex .item .link-with-arrow:after { content: ' →'; font-family: "Open Sauce", "Avenir", sans-serif; font-weight: 400; position: relative; opacity: 0; left: 2px; transition: ease 0.3s; }
 section.work .flex .item .link-with-arrow:hover:after { opacity: 1; left: 4px; }
 
 footer { margin: 2%; }

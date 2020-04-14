@@ -1,6 +1,6 @@
 - title: snax
   url: https://snaxreport.com
-  description: 📒 A zine about snacks featuring original essays, poetry, and illustrations that explore the universal experience of snacking.
+  description: 📒 A zine about snacks with original essays, poetry, and illustrations that explore the universal experience of snacking.
   l1-url: https://snaxreport.com/issueone
   l1-copy: Buy Issue One
 
@@ -13,14 +13,14 @@
 - title: give with us
   url: https://givewith.us
   description: 💸 A platform for shoppers to connect with sales reps who are donating commission to good causes and organizations.
-  l1-url: https://givewith.us/jillian
-  l1-copy: Shop with me
+  l1-url: https://www.thethirlby.com/camp-thirlby-diary/2019/4/23/why-i-built-give-with-us-a-shopping-driven-donation-platform
+  l1-copy: Why I made it
 
 - title: lickability blog
   url: https://blog.lickability.com
-  description: 📝 A blog from the team at Lickability about iOS engineering and small business best practices, with a brand-new look on our website.
+  description: 📝 A blog about iOS engineering and small business best practices, with a brand-new look on our website.
   l1-url: https://lickability.com/blog/our-new-blog/
-  l1-copy: Read more
+  l1-copy: How we built it
 
 - title: laustrology
   url: https://laustrology.com

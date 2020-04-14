@@ -7,7 +7,7 @@ body {
   opacity: 0.75;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: $serif;
   font-weight: normal;
   line-height: 0.5;
@@ -15,8 +15,8 @@ h1, h2, h3 {
 p {
   font-family: $sans-serif;
   margin-top: 0;
-  line-height: 1.6;
-  @include responsive-font(3vw, $small-ish, $medium-ish, $regular);
+  line-height: 1.8;
+  @include responsive-font(2.5vw, $small-ish, $regular, $regular);
 }
 a {
   position: relative;
@@ -83,6 +83,31 @@ section {
   }
 
   &.work {
+    position: relative;
+
+    header {
+      position: absolute;
+      top: calc(12vh + 10%);
+      left: -8%;
+
+      -webkit-transform-origin: 0 0;
+      -moz-transform-origin:    0 0;
+      -ms-transform-origin:     0 0;
+      -o-transform-origin:      0 0;
+
+      -webkit-transform: rotate(-90deg);
+      -moz-transform:    rotate(-90deg);
+      -ms-transform:     rotate(-90deg);
+      -o-transform:      rotate(-90deg);
+
+      h3 {
+        margin: 0;
+        opacity: 0.5;
+        font-family: $mono;
+        font-size: $medium-large;
+        animation: text-gradient 60s ease infinite;
+      }
+    }
     .flex {
       display: flex;
       flex-direction: row;
@@ -92,9 +117,10 @@ section {
       .item {
         max-width: 60vw;
         margin: 2%;
+        padding: 2rem 0;
 
         h2 { @include responsive-font(1.8vw, $medium-ish, $medium-large, $medium); }
-        p { @include responsive-font(1.2vw, $small-ish, $regular, $small-ish); }
+        p { @include responsive-font(0.6vw, $small-ish, $regular, $small-ish); }
         .link-with-arrow {
           position: relative;
           transition: ease 0.3s;

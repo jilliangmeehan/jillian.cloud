@@ -1,29 +1,32 @@
 // Fonts
 
 @font-face {
-  font-family: 'Basis Grotesque Pro';
+  font-family: 'Open Sauce';
   font-weight: 400;
-  src: url('../fonts/BasisGrotesquePro-Regular.woff2') format('woff2');
+  src: url('../fonts/OpenSauceSans-One.woff') format('woff');
+  src: url('../fonts/OpenSauceSans-One.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Basis Grotesque Pro';
+  font-family: 'Open Sauce';
   font-weight: 400;
   font-style: italic;
-  src: url('../fonts/BasisGrotesqueProRegularItalic.woff2') format('woff2');
+  src: url('../fonts/OpenSauceSans-Italic.woff') format('woff');
+  src: url('../fonts/OpenSauceSans-Italic.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Basis Grotesque Pro';
+  font-family: 'Open Sauce';
   font-weight: 600;
-  src: url('../fonts/BasisGrotesqueProMedium.woff2') format('woff2');
+  src: url('../fonts/OpenSauceSans-Medium.woff') format('woff');
+  src: url('../fonts/OpenSauceSans-Medium.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Basis Grotesque Pro';
+  font-family: 'Open Sauce';
   font-weight: 600;
   font-style: italic;
-  src: url('../fonts/BasisGrotesqueProMediumItalic.woff2') format('woff2');
+  src: url('../fonts/OpenSauceSans-SemiBoldItalic.ttf') format('ttf');
 }
 
 @font-face {
@@ -38,7 +41,7 @@
   src: url('../fonts/FantasqueSansMono-Regular.woff2') format('woff2');
 }
 
-$sans-serif: 'Basis Grotesque Pro', 'Avenir', sans-serif;
+$sans-serif: 'Open Sauce', 'Avenir', sans-serif;
 $serif: 'Recoleta', serif;
 $mono: 'Fantasque Sans Mono', mono;
 
