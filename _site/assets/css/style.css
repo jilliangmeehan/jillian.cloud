@@ -9,8 +9,8 @@
   25% { background-color: #FFE4E4; }
   50% { background-color: #FAE9EE; }
   75% { background-color: #F1E5F0; } }
-@keyframes text-gradient { 0%,100% { color: #FE4A4B; }
-  25% { color: #D47292; }
+@keyframes text-gradient { 0%,100% { color: #F44041; }
+  25% { color: #CF6185; }
   50% { color: #9D589B; }
   75% { color: #45489C; } }
 @keyframes mask-gradient { 0%,100% { background: #F39895; }
@@ -30,7 +30,7 @@ a .letter { display: inline-block; line-height: 1em; }
 
 p a:before { content: ''; position: absolute; width: 112%; height: 100%; top: 0; left: -6%; z-index: -1; -webkit-mask-image: url("../underline.svg"); animation: mask-gradient 60s ease infinite; }
 
-.gradient-link { font-family: "Fantasque Sans Mono", mono; animation: text-gradient 60s ease infinite; }
+.gradient-link { text-transform: lowercase; font-family: "Fantasque Sans Mono", mono; animation: text-gradient 60s ease infinite; }
 
 .container { margin: 10% 8%; }
 
@@ -39,6 +39,10 @@ section.head { margin: 2%; padding-top: 2%; max-width: 600px; }
 section.head h1 { font-size: 24px; font-size: 5vw; }
 @media (max-width: 480px) { section.head h1 { font-size: 24px; } }
 @media (min-width: 960px) { section.head h1 { font-size: 48px; } }
+section.head h1:after { content: ' ☁️'; position: relative; opacity: 0; left: 12px; transition: ease 0.3s; font-size: 18px; font-size: 5vw; }
+@media (max-width: 360px) { section.head h1:after { font-size: 18px; } }
+@media (min-width: 480px) { section.head h1:after { font-size: 24px; } }
+section.head h1:hover:after { opacity: 1; }
 section.head nav { margin-top: 2rem; }
 section.head nav ul { list-style: none; margin: 0; padding-left: 0; }
 section.head nav ul li { font-family: "Fantasque Sans Mono", mono; margin-right: 2rem; display: block; float: left; position: relative; font-size: 18px; font-size: 3vw; }
@@ -58,8 +62,16 @@ section.work .flex .item p { font-size: 16px; font-size: 0.6vw; }
 @media (max-width: 2666.6666666667px) { section.work .flex .item p { font-size: 16px; } }
 @media (min-width: 3000px) { section.work .flex .item p { font-size: 18px; } }
 section.work .flex .item .link-with-arrow { position: relative; transition: ease 0.3s; }
-section.work .flex .item .link-with-arrow:after { content: ' →'; font-family: "Open Sauce", "Avenir", sans-serif; font-weight: 400; position: relative; opacity: 0; left: 2px; transition: ease 0.3s; }
+section.work .flex .item .link-with-arrow:after { content: ' →'; font-family: "Fantasque Sans Mono", mono; font-weight: 400; position: relative; opacity: 0; left: 2px; transition: ease 0.3s; }
 section.work .flex .item .link-with-arrow:hover:after { opacity: 1; left: 4px; }
+section.hi { display: flex; flex-direction: column; }
+section.hi .card { margin: 12px 0px 12px 0px; display: flex; flex-direction: row; align-items: center; }
+section.hi .card .item { margin: 15px 0px 15px 20px; }
+section.hi .card .item h2 { margin: 0.4em auto; }
+section.hi .card .item p { margin: 0; font-family: "Fantasque Sans Mono", mono; animation: text-gradient 60s ease infinite; }
+section.hi .card .item p.emoji { font-size: 24px; font-size: 5vw; }
+@media (max-width: 400px) { section.hi .card .item p.emoji { font-size: 20px; } }
+@media (min-width: 720px) { section.hi .card .item p.emoji { font-size: 36px; } }
 
 footer { margin: 2%; }
 footer p { font-family: "Fantasque Sans Mono", mono; font-size: 18px; font-size: 1.2vw; animation: text-gradient 60s ease infinite; }

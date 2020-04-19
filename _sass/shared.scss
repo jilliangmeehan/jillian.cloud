@@ -42,6 +42,7 @@ p a {
   }
 }
 .gradient-link {
+  text-transform: lowercase;
   font-family: $mono;
   animation: text-gradient 60s ease infinite;
 }
@@ -55,7 +56,18 @@ section {
     margin: 2%;
     padding-top: 2%;
     max-width: 600px;
-    h1 { @include responsive-font(5vw, $medium, $large, $medium); }
+    h1 {
+      @include responsive-font(5vw, $medium, $large, $medium);
+      &:after {
+        content: ' ☁️';
+        position: relative;
+        opacity: 0;
+        left: 12px;
+        transition: ease 0.3s;
+        @include responsive-font(5vw, $regular, $medium, $regular);
+      }
+      &:hover:after { opacity: 1; }
+    }
     nav {
       margin-top: 2rem;
       ul {
@@ -127,7 +139,7 @@ section {
         }
         .link-with-arrow:after {
           content: ' →';
-          font-family: $sans-serif;
+          font-family: $mono;
           font-weight: 400;
           position: relative;
           opacity: 0;
@@ -138,6 +150,31 @@ section {
         .link-with-arrow:hover:after {
           opacity: 1;
           left: 4px;
+        }
+      }
+    }
+  }
+
+  &.hi {
+    display: flex;
+    flex-direction: column;
+
+    .card {
+      margin: 12px 0px 12px 0px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .item {
+        margin: 15px 0px 15px 20px;
+        h2 {
+          margin: 0.4em auto;
+        }
+        p {
+          margin: 0;
+          font-family: $mono;
+          animation: text-gradient 60s ease infinite;
+          &.emoji { @include responsive-font(5vw, $medium-ish, $medium-large, $medium); }
         }
       }
     }
