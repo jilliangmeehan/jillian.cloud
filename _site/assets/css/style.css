@@ -78,5 +78,5 @@ footer p { font-family: "Fantasque Sans Mono", mono; font-size: 18px; font-size:
 @media (max-width: 1333.3333333333px) { footer p { font-size: 16px; } }
 @media (min-width: 1666.6666666667px) { footer p { font-size: 20px; } }
 
-@media screen and (min-width: 740px) { section.work .flex .item { max-width: 45vw; } }
+@media screen and (min-width: 740px) { section.work .flex .item { max-width: 60vw; } }
 @media screen and (min-width: 980px) { section.work .flex .item { max-width: 20vw; } }
