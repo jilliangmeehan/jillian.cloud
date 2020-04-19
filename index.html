@@ -1,37 +1,36 @@
 ---
-title: jillian g. meehan
-layout: default
-bio: making things on the internet
-description: jillian g. meehan is making things on the internet
+layout: home
+title: jillian meehan
+bio: I'm a Project Manager at [Lickability](https://lickability.com), a small software studio in New York. I also sometimes make zines, newsletters, and websites like this one. You can find me on [Twitter](https://twitter.com/jilliangmeehan) and [Instagram](https://instagram.com), if you want.
 ---
 
-<!-- Variables -->
-{% capture lickability %}{% include work/lickability.md %}{% endcapture %}
-{% capture writing %}{% include work/writing.md %}{% endcapture %}
-{% capture newsletter %}{% include work/newsletter.md %}{% endcapture %}
-{% capture websites %}{% include work/websites.md %}{% endcapture %}
-{% capture in-progress %}{% include work/in-progress.md %}{% endcapture %}
-{% capture contact %}{% include work/contact.md %}{% endcapture %}
-
-<!-- Content -->
 <div class="container">
-  <div id="accordion">
-    <h2 class="peach">lickability</h2>
-    <div class="item peach"><p>{{ lickability | markdownify }}</p></div>
+  <section class="head">
+    <h1>hi, I'm Jillian Meehan</h1>
+    {{ page.bio | markdownify }}
+    <nav>
+      {% include nav.html %}
+    </nav>
+  </section>
 
-    <h2 class="purplecold">snax</h2>
-    <div class="item purplecold"><p>{{ in-progress | markdownify }}</p></div>
 
-    <h2 class="yellow">newsletter</h2>
-    <div class="item yellow"><p>{{ newsletter | markdownify }}</p></div>
-
-    <h2 class="blue">websites</h2>
-    <div class="item blue"><p>{{ websites | markdownify }}</p></div>
-
-    <h2 class="orange">writing</h2>
-    <div class="item orange"><p>{{ writing | markdownify }}</p></div>
-
-    <h2 class="purplewarm">contact</h2>
-    <div class="item purplewarm"><p>{{ contact | markdownify }}</p></div>
-  </div>
+  <section class="work">
+    <div class="flex">
+      {% for item in site.data.work %}
+      <div class="item">
+        {% if item.url %}
+          <h2><a class="link-with-arrow" href="{{ item.url }}">{{ item.title }}</a></h2>
+        {% else %}
+          <h2>{{ item.title }}</h2>
+        {% endif %}
+        <p>{{ item.description | markdownify }}</p>
+        {% if item.l1-url %}
+          <div class="links">
+            <a aria-label="{{ item.l1-copy }}" role="link" class="gradient-link" href="{{ item.l1-url }}">{{ item.l1-copy }}</a>
+          </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
 </div>

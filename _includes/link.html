@@ -1,11 +1,9 @@
-<a href="{{ include.link.url }}">
-  <div class="card {{ include.link.color }}">
+  <div class="card">
     <div class="item">
-      {{ include.link.emoji }}
+      <p class="emoji">{{ include.link.emoji }}</p>
     </div>
     <div class="item">
-      <p>{{ include.link.subtitle }}</p>
-      <p class="link_title">{{ include.link.title }}</p>
+      <h2>{{ include.link.title }}</h2>
+      <p><a href="{{ include.link.url }}">{{ include.link.subtitle }}</a></p>
     </div>
   </div>
-</a>

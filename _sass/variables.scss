@@ -1,0 +1,126 @@
+// Fonts
+
+@font-face {
+  font-family: 'Open Sauce';
+  font-weight: 400;
+  src: url('../fonts/OpenSauceSans-One.woff') format('woff');
+  src: url('../fonts/OpenSauceSans-One.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sauce';
+  font-weight: 400;
+  font-style: italic;
+  src: url('../fonts/OpenSauceSans-Italic.woff') format('woff');
+  src: url('../fonts/OpenSauceSans-Italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sauce';
+  font-weight: 600;
+  src: url('../fonts/OpenSauceSans-Medium.woff') format('woff');
+  src: url('../fonts/OpenSauceSans-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sauce';
+  font-weight: 600;
+  font-style: italic;
+  src: url('../fonts/OpenSauceSans-SemiBoldItalic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  font-weight: 700;
+  src: url('../fonts/Recoleta-Semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Fantasque Sans Mono';
+  font-weight: 400;
+  src: url('../fonts/FantasqueSansMono-Regular.woff2') format('woff2');
+}
+
+$sans-serif: 'Open Sauce', 'Avenir', sans-serif;
+$serif: 'Recoleta', serif;
+$mono: 'Fantasque Sans Mono', mono;
+
+// Font sizes
+$xxl: 144px;
+$extra-large: 72px;
+$large: 48px;
+$medium-large: 36px;
+$medium: 24px;
+$medium-ish: 20px;
+$regular: 18px;
+$small-ish: 16px;
+$small: 14px;
+
+// Colors
+$orange: #FFB9A3;
+$peach: #F39895;
+$pink: #DDACBC;
+$purple: #BD9BBF;
+$indigo: #8C90BF;
+
+$light-orange: #FFECE7;
+$light-peach: #FFE4E4;
+$light-pink: #FAE9EE;
+$light-purple: #F1E5F0;
+$light-indigo: #E2E3F0;
+
+$dark-orange: #F4511D;
+$dark-peach: #F44041;
+$dark-pink: #CF6185;
+$dark-purple: #9D589B;
+$dark-indigo: #45489C;
+
+$transparent: rgba(0, 0, 0, 0);
+$root-color: text-gradient 60s ease infinite;
+
+// Gradients
+@keyframes bg-gradient {
+  0%,100%{ background-color: $light-orange }
+  25%{ background-color: $light-peach }
+  50%{ background-color: $light-pink }
+  75%{ background-color: $light-purple }
+}
+
+@keyframes text-gradient {
+  0%,100%{ color: $dark-peach }
+  25%{ color: $dark-pink }
+  50%{ color: $dark-purple }
+  75%{ color: $dark-indigo }
+}
+
+@keyframes mask-gradient {
+  0%,100%{ background: $peach }
+  25%{ background: $pink }
+  50%{ background: $purple }
+  75%{ background: $indigo }
+}
+
+// Responsive text mixin
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+
+  @if $fallback {
+    font-size: $fallback;
+  }
+
+  font-size: $responsive;
+}

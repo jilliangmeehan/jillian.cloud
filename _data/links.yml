@@ -1,47 +1,39 @@
-- title: about me
+- title: my work
   subtitle: jillianmeehan.com
+  url: /index
   emoji: ☁️
-  url: https://jillianmeehan.com
-  color: peach
 
 - title: snax
   subtitle: a zine about snacks
-  emoji: 🍭
   url: https://snaxreport.com
-  color: purplecold
+  emoji: 🍭
 
 - title: give with us
   subtitle: help us donate
-  emoji: 💸
   url: https://givewith.us
-  color: yellow
+  emoji: 💸
 
 - title: letters to summer
   subtitle: my newsletter
-  emoji: 💌
   url: https://letterstosummer.com
-  color: blue
+  emoji: 💌
 
 - title: glossier
   subtitle: shop with me
-  emoji: 🛍
   url: https://glossier.com/reps/jillian
-  color: orange
+  emoji: 🛍️
 
 - title: mejuri
   subtitle: shop with me
-  emoji: 🛍
   url: http://crew.mejuri.com/jgm
-  color: purplewarm
+  emoji: 🛍️
 
 - title: parade
   subtitle: shop with me
-  emoji: 🛍
   url: http://secret.yourparade.com/jilliangmeehan
-  color: blue
+  emoji: 🛍️
 
 - title: the bleu
   subtitle: interview
-  emoji: 🌀
   url: https://www.the-bleu.com/interviews/jillian-meehan/
-  color: peach
+  emoji: 🌀
