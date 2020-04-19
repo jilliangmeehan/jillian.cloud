@@ -132,7 +132,7 @@ section {
         padding: 2rem 0;
 
         h2 { @include responsive-font(1.8vw, $medium-ish, $medium-large, $medium); }
-        p { @include responsive-font(0.6vw, $small-ish, $regular, $small-ish); }
+        p { @include responsive-font(0.5vw, $small, $regular, $small-ish); }
         .link-with-arrow {
           position: relative;
           transition: ease 0.3s;

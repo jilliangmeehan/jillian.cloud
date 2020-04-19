@@ -58,9 +58,9 @@ section.work .flex .item { max-width: 60vw; margin: 2%; padding: 2rem 0; }
 section.work .flex .item h2 { font-size: 24px; font-size: 1.8vw; }
 @media (max-width: 1111.1111111111px) { section.work .flex .item h2 { font-size: 20px; } }
 @media (min-width: 2000px) { section.work .flex .item h2 { font-size: 36px; } }
-section.work .flex .item p { font-size: 16px; font-size: 0.6vw; }
-@media (max-width: 2666.6666666667px) { section.work .flex .item p { font-size: 16px; } }
-@media (min-width: 3000px) { section.work .flex .item p { font-size: 18px; } }
+section.work .flex .item p { font-size: 16px; font-size: 0.5vw; }
+@media (max-width: 2800px) { section.work .flex .item p { font-size: 14px; } }
+@media (min-width: 3600px) { section.work .flex .item p { font-size: 18px; } }
 section.work .flex .item .link-with-arrow { position: relative; transition: ease 0.3s; }
 section.work .flex .item .link-with-arrow:after { content: ' →'; font-family: "Fantasque Sans Mono", mono; font-weight: 400; position: relative; opacity: 0; left: 2px; transition: ease 0.3s; }
 section.work .flex .item .link-with-arrow:hover:after { opacity: 1; left: 4px; }
