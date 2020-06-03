@@ -4,6 +4,9 @@
     </div>
     <div class="item">
       <h2>{{ include.link.title }}</h2>
+      {% if include.link.description %}
+        <p>{{ include.link.description }}</p>
+      {% endif %}
       <p><a href="{{ include.link.url }}">{{ include.link.subtitle }}</a></p>
     </div>
   </div>
