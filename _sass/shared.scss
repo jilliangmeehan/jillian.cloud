@@ -167,6 +167,7 @@ section {
 
       .item {
         margin: 15px 0px 15px 20px;
+        &.emoji { margin: 0; }
         h2 {
           margin: 0.4em auto;
         }
@@ -174,8 +175,16 @@ section {
           margin: 0;
           font-family: $mono;
           animation: text-gradient 60s ease infinite;
-          &.emoji { @include responsive-font(5vw, $medium-ish, $medium-large, $medium); }
+          &.emoji {
+            @include responsive-font(5vw, $medium-ish, $medium-large, $medium);
+           }
         }
+      }
+    }
+
+    &.blm {
+      .item {
+        max-width: 500px;
       }
     }
   }
