@@ -1,7 +1,13 @@
 - title: defund nypd
-  subtitle: draft an email
+  subtitle: send an email
   description: send an email to various nyc council members asking them to defund nypd and reallocate budget to social services and education programs.
   url: https://tinyurl.com/emailDefundNYPD
+  emoji: 📧
+
+- title: repeal 50a
+  subtitle: send an email
+  description: send an email to the majority leader and speaker in nyc urging them to repeal 50a, which would provide greater transparency on nypd misconduct.
+  url: http://tinyurl.com/50Aemail
   emoji: 📧
 
 - title: email2act
