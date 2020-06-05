@@ -7,6 +7,6 @@
       {% if include.link.description %}
         <p>{{ include.link.description }}</p>
       {% endif %}
-      <p><a href="{{ include.link.url }}">{{ include.link.subtitle }}</a></p>
+      <p><a href="{{ include.link.url }}" onclick="fathom.trackGoal('{{ include.link.goal-code }}', 0);">{{ include.link.subtitle }}</a></p>
     </div>
   </div>
