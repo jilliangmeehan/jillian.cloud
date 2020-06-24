@@ -1,23 +1,9 @@
-- title: birthday for breonna
-  subtitle: say her name
-  description: in honor of breonna taylor's birthday on june 5, here are 10 things you can do to commemorate her life and fight for her justice.
-  url: https://msha.ke/30flirtyfilm/
-  emoji: 🍰
-  goal-code: ZFUQY79G
-
 - title: defund nypd
   subtitle: send an email
   description: send an email to various nyc council members asking them to defund nypd and reallocate budget to social services and education programs.
   url: https://tinyurl.com/emailDefundNYPD
   emoji: 📧
   goal-code: 9UYQETUS
-
-- title: repeal 50a
-  subtitle: send an email
-  description: send an email to the majority leader and speaker in nyc urging them to repeal 50a, which would provide greater transparency on nypd misconduct.
-  url: http://tinyurl.com/50Aemail
-  emoji: 📧
-  goal-code: 9PF9T8YR
 
 - title: email2act
   subtitle: send emails
@@ -32,6 +18,25 @@
   url: https://defund12.org
   emoji: 📧
   goal-code: ORS24DFM
+
+- title: justice for elijah mcclain
+  subtitle: call, email, donate, petition
+  description: a resource for ways to demand justice for elijah mcclain by emailing and calling aurora government officials, signing petitions, and donating to his mother's gofundme.
+  url: https://linktr.ee/Justiceforelijahmcclain
+  emoji: 📝
+
+- title: birthday for breonna
+  subtitle: say her name
+  description: in honor of breonna taylor's birthday on june 5, here are 10 things you can do to commemorate her life and fight for her justice.
+  url: https://msha.ke/30flirtyfilm/
+  emoji: 🍰
+  goal-code: ZFUQY79G
+
+- title: creative ecosystems supporting black folks
+  subtitle: fundraisers, grants, and mutual aid
+  description: a growing list of funds supporting black folks nationwide, with links to to donate.
+  url: https://docs.google.com/spreadsheets/d/1VHrlB9u6RpGjZK_SW-JKf7t-QehBdBF7EVF8Qd-j02s/edit#gid=1584271755
+  emoji: 💸
 
 - title: bail funds
   subtitle: donate
@@ -67,3 +72,9 @@
   url: https://docs.google.com/document/d/1BRlF2_zhNe86SGgHa6-VlBO-QgirITwCTugSfKie5Fs/preview?pru=AAABcnb5mB8*DxXs7K_umbRHlS1kzEln3g
   emoji: 📋
   goal-code: WLFJYMT9
+
+- title: social change roles reading list
+  subtitle: find your role
+  description: an overview of the different roles you can play in a social change ecosystem, and an anti-racist reading list for each role.
+  url: https://medium.com/@Aliya_Nealy/a-blm-x-social-change-roles-reading-list-447b87b4513d
+  emoji: 📖
