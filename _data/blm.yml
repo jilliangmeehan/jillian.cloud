@@ -1,20 +1,13 @@
-- title: defund nypd
-  subtitle: send an email
-  description: send an email to various nyc council members asking them to defund nypd and reallocate budget to social services and education programs.
-  url: https://tinyurl.com/emailDefundNYPD
-  emoji: 📧
-  goal-code: 9UYQETUS
-
 - title: email2act
   subtitle: send emails
-  description: email templates to send to government officials in different cities asking them to act on the actions of their police departments.
+  description: email templates to send to government officials in different cities asking them to act on the actions of their police departments. (⚠️ change the subject line + a few lines of the email so it doesn't get filtered out!)
   url: https://www.email2act.com
   emoji: 📧
   goal-code: AIF29E5N
 
 - title: defund 12
   subtitle: send emails
-  description: email government officials and council members in different cities to reallocate police budgets toward education, social services, and dismantling racial inequality.
+  description: email government officials and council members in different cities to reallocate police budgets toward education, social services, and dismantling racial inequality. (⚠️ change the subject line + a few lines of the email so it doesn't get filtered out!)
   url: https://defund12.org
   emoji: 📧
   goal-code: ORS24DFM
