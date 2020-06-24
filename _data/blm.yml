@@ -56,8 +56,14 @@
   subtitle: black lives matter
   description: lots of resources for signing petitions, texting or calling your representatives, donating, protesting, and more.
   url: https://blacklivesmatters.carrd.co
-  emoji: ❤️
+  emoji: 💖
   goal-code: EVKLKWMT
+
+- title: how to make an sms bot
+  subtitle: no coding required
+  description: a step-by-step guide to building sms bots using google sheets and twilio, for mutual aid funds and organizers who want to get in touch with their community via text.
+  url: https://docs.google.com/document/d/1VzUsLofQVlP68wWKzUAmFO701I14hZpBZLIml1aWs7E/edit
+  emoji: 📱
 
 - title: action at work
   subtitle: take action
