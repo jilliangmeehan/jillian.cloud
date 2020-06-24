@@ -68,7 +68,7 @@ section.hi { display: flex; flex-direction: column; }
 section.hi .card { margin: 12px 0px 12px 0px; display: flex; flex-direction: row; align-items: center; }
 section.hi .card .item { margin: 15px 0px 15px 20px; }
 section.hi .card .item.emoji { margin: 0; }
-section.hi .card .item h2 { margin: 0.4em auto; }
+section.hi .card .item h2 { margin: 0.4em auto; line-height: 100%; }
 section.hi .card .item p { margin: 0; font-family: "Fantasque Sans Mono", mono; animation: text-gradient 60s ease infinite; }
 section.hi .card .item p.emoji { font-size: 24px; font-size: 5vw; }
 @media (max-width: 400px) { section.hi .card .item p.emoji { font-size: 20px; } }
