@@ -18,11 +18,11 @@
   url: https://linktr.ee/Justiceforelijahmcclain
   emoji: 📝
 
-- title: birthday for breonna
+- title: for breonna
   subtitle: say her name
-  description: in honor of breonna taylor's birthday on june 5, here are 10 things you can do to commemorate her life and fight for her justice.
-  url: https://msha.ke/30flirtyfilm/
-  emoji: 🍰
+  description: a website that makes it easy to call, email, or schedule a reminder to call & email to get justice for breonna taylor.
+  url: https://www.forbreonna.com
+  emoji: 📝
   goal-code: ZFUQY79G
 
 - title: creative ecosystems supporting black folks
@@ -51,6 +51,12 @@
   url: https://blacklivesmatters.carrd.co
   emoji: 💖
   goal-code: EVKLKWMT
+
+- title: one anti-racist action a day
+  subtitle: subscribe
+  description: a newsletter that sends one anti-racist action you can take every day—a petition to sign, an email to send, etc.
+  url: https://archive.oneaction.today
+  emoji: 💌
 
 - title: how to make an sms bot
   subtitle: no coding required
