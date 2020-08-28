@@ -58,15 +58,6 @@ section {
     max-width: 600px;
     h1 {
       @include responsive-font(5vw, $medium, $large, $medium);
-      &:after {
-        content: ' ☁️';
-        position: relative;
-        opacity: 0;
-        left: 12px;
-        transition: ease 0.3s;
-        @include responsive-font(5vw, $regular, $medium, $regular);
-      }
-      &:hover:after { opacity: 1; }
     }
     nav {
       margin-top: 2rem;
@@ -198,6 +189,19 @@ footer {
     @include responsive-font(1.2vw, $small-ish, $medium-ish, $regular);
     animation: text-gradient 60s ease infinite;
   }
+}
+
+#trail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.5em;
+  pointer-events: none;
+  z-index: -1;
+}
+
+#trail span {
+  position: absolute;
 }
 
 @media screen and (min-width: 740px) {
