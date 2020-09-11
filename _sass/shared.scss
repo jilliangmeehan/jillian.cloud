@@ -73,6 +73,7 @@ section {
           float: left;
           position: relative;
           @include responsive-font(3vw, $small-ish, $medium-ish, $regular);
+          animation: text-gradient 60s ease infinite;
         }
       }
     }
