@@ -41,6 +41,7 @@ p a {
     animation: mask-gradient 60s ease infinite;
   }
 }
+svg { animation: text-gradient 60s ease infinite; }
 .gradient-link {
   text-transform: lowercase;
   font-family: $mono;
@@ -65,7 +66,7 @@ section {
         list-style: none;
         margin: 0;
         padding-left: 0;
-        li {
+        a {
           font-family: $mono;
           margin-right: 2rem;
           display: block;
@@ -73,14 +74,6 @@ section {
           position: relative;
           @include responsive-font(3vw, $small-ish, $medium-ish, $regular);
         }
-      }
-    }
-    a {
-      position: relative;
-      display: inline-block;
-      .letter {
-        display: inline-block;
-        line-height: 1em;
       }
     }
   }
@@ -214,4 +207,21 @@ footer {
   section.work .flex {
     .item { max-width: 20vw; }
   }
+}
+
+@media (prefers-color-scheme: dark) {
+ body {
+   color: $light-text;
+   background: #323232;
+   animation: none;
+ }
+ a { color: $light-text; }
+ svg { animation: dm-text-gradient 60s ease infinite; }
+ .gradient-link { animation: dm-text-gradient 60s ease infinite; }
+ p a {
+   &:before {
+     animation: dm-mask-gradient 60s ease infinite;
+   }
+ }
+ section.hi .card .item p { animation: dm-text-gradient 60s ease infinite; }
 }

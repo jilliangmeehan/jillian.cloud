@@ -3,33 +3,34 @@
   description: 📒 A zine about snacks with original essays, poetry, and illustrations that explore the universal experience of snacking.
   l1-url: https://snaxreport.com/pdf
   l1-copy: Buy Issue One
-  goal-code: FB8SU0JF
 
 - title: letters to summer
   url: https://letterstosummer.com
   description: 💌 A biweekly newsletter written by two best friends about what we’re reading, watching, listening to, and enjoying.
   l1-url: https://letterstosummer.com/subscribe
   l1-copy: Subscribe
-  goal-code: WWIJDNJO
 
 - title: give with us
   url: https://givewith.us
   description: 💸 A platform for shoppers to connect with sales reps who are donating commission to good causes and organizations.
   l1-url: https://www.thethirlby.com/camp-thirlby-diary/2019/4/23/why-i-built-give-with-us-a-shopping-driven-donation-platform
   l1-copy: Why I made it
-  goal-code: NVBD7FET
 
 - title: lickability blog
   url: https://blog.lickability.com
   description: 📝 A blog about iOS engineering and small business best practices, with a brand-new look on our website.
   l1-url: https://lickability.com/blog/our-new-blog/
   l1-copy: How we built it
-  goal-code: WWLZGEBN
 
 - title: laustrology
   url: https://laustrology.com
   description: 🔮 An experimental, no-bullshit astrology website with monthly horoscopes written by Laura Tormos.
-  goal-code: 5HKUBR9A
 
 - title: other stuff
-  description: 🌷 I designed and built websites for [Summer Farah](https://summerfarah.com) and [Cassie Burge](https://cassieburge.glitch.me).
+  description: 🌷 I designed and built websites for some nice people that I like.
+  l1-url: https://dylanjewards.com
+  l1-copy: ✿ dylan edwards
+  l2-url: https://summerfarah.com
+  l2-copy: ✿ summer farah
+  l3-url: https://cassieburge.glitch.me
+  l3-copy: ✿ cassie burge

@@ -9,14 +9,26 @@
   25% { background-color: #FFE4E4; }
   50% { background-color: #FAE9EE; }
   75% { background-color: #F1E5F0; } }
+@keyframes dm-bg-gradient { 0%,100% { background-color: #895C51; }
+  25% { background-color: #844B4A; }
+  50% { background-color: #765760; }
+  75% { background-color: #644E62; } }
 @keyframes text-gradient { 0%,100% { color: #F44041; }
   25% { color: #CF6185; }
   50% { color: #9D589B; }
   75% { color: #45489C; } }
+@keyframes dm-text-gradient { 0%,100% { color: #F39895; }
+  25% { color: #DDACBC; }
+  50% { color: #BD9BBF; }
+  75% { color: #8C90BF; } }
 @keyframes mask-gradient { 0%,100% { background: #F39895; }
   25% { background: #DDACBC; }
   50% { background: #BD9BBF; }
   75% { background: #8C90BF; } }
+@keyframes dm-mask-gradient { 0%,100% { background: #844B4A; }
+  25% { background: #765760; }
+  50% { background: #644E62; }
+  75% { background: #474963; } }
 body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; animation: bg-gradient 60s ease infinite; background-size: cover; background-position: top left; opacity: 0.75; }
 
 h1, h2 { font-family: "Recoleta", serif; font-weight: normal; line-height: 0.5; }
@@ -30,6 +42,8 @@ a .letter { display: inline-block; line-height: 1em; }
 
 p a:before { content: ''; position: absolute; width: 112%; height: 100%; top: 0; left: -6%; z-index: -1; -webkit-mask-image: url("../underline.svg"); animation: mask-gradient 60s ease infinite; }
 
+svg { animation: text-gradient 60s ease infinite; }
+
 .gradient-link { text-transform: lowercase; font-family: "Fantasque Sans Mono", mono; animation: text-gradient 60s ease infinite; }
 
 .container { margin: 10% 8%; }
@@ -41,11 +55,9 @@ section.head h1 { font-size: 24px; font-size: 5vw; }
 @media (min-width: 960px) { section.head h1 { font-size: 48px; } }
 section.head nav { margin-top: 2rem; }
 section.head nav ul { list-style: none; margin: 0; padding-left: 0; }
-section.head nav ul li { font-family: "Fantasque Sans Mono", mono; margin-right: 2rem; display: block; float: left; position: relative; font-size: 18px; font-size: 3vw; }
-@media (max-width: 533.3333333333px) { section.head nav ul li { font-size: 16px; } }
-@media (min-width: 666.6666666667px) { section.head nav ul li { font-size: 20px; } }
-section.head a { position: relative; display: inline-block; }
-section.head a .letter { display: inline-block; line-height: 1em; }
+section.head nav ul a { font-family: "Fantasque Sans Mono", mono; margin-right: 2rem; display: block; float: left; position: relative; font-size: 18px; font-size: 3vw; }
+@media (max-width: 533.3333333333px) { section.head nav ul a { font-size: 16px; } }
+@media (min-width: 666.6666666667px) { section.head nav ul a { font-size: 20px; } }
 section.work { position: relative; }
 section.work header { position: absolute; top: calc(12vh + 10%); left: -8%; -webkit-transform-origin: 0 0; -moz-transform-origin: 0 0; -ms-transform-origin: 0 0; -o-transform-origin: 0 0; -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); }
 section.work header h3 { margin: 0; opacity: 0.5; font-family: "Fantasque Sans Mono", mono; font-size: 36px; animation: text-gradient 60s ease infinite; }
@@ -82,3 +94,9 @@ footer p { font-family: "Fantasque Sans Mono", mono; font-size: 18px; font-size:
 
 @media screen and (min-width: 740px) { section.work .flex .item { max-width: 30vw; } }
 @media screen and (min-width: 980px) { section.work .flex .item { max-width: 20vw; } }
+@media (prefers-color-scheme: dark) { body { color: #E9E9E9; background: #323232; animation: none; }
+  a { color: #E9E9E9; }
+  svg { animation: dm-text-gradient 60s ease infinite; }
+  .gradient-link { animation: dm-text-gradient 60s ease infinite; }
+  p a:before { animation: dm-mask-gradient 60s ease infinite; }
+  section.hi .card .item p { animation: dm-text-gradient 60s ease infinite; } }

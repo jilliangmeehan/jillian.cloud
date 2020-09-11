@@ -75,6 +75,15 @@ $dark-pink: #CF6185;
 $dark-purple: #9D589B;
 $dark-indigo: #45489C;
 
+$darker-orange: #895C51;
+$darker-peach: #844B4A;
+$darker-pink: #765760;
+$darker-purple: #644E62;
+$darker-indigo: #474963;
+
+$dark-text: black;
+$light-text: #E9E9E9;
+
 $transparent: rgba(0, 0, 0, 0);
 $root-color: text-gradient 60s ease infinite;
 
@@ -86,6 +95,13 @@ $root-color: text-gradient 60s ease infinite;
   75%{ background-color: $light-purple }
 }
 
+@keyframes dm-bg-gradient {
+  0%,100%{ background-color: $darker-orange }
+  25%{ background-color: $darker-peach }
+  50%{ background-color: $darker-pink }
+  75%{ background-color: $darker-purple }
+}
+
 @keyframes text-gradient {
   0%,100%{ color: $dark-peach }
   25%{ color: $dark-pink }
@@ -93,11 +109,25 @@ $root-color: text-gradient 60s ease infinite;
   75%{ color: $dark-indigo }
 }
 
+@keyframes dm-text-gradient {
+  0%,100%{ color: $peach }
+  25%{ color: $pink }
+  50%{ color: $purple }
+  75%{ color: $indigo }
+}
+
 @keyframes mask-gradient {
   0%,100%{ background: $peach }
   25%{ background: $pink }
   50%{ background: $purple }
   75%{ background: $indigo }
+}
+
+@keyframes dm-mask-gradient {
+  0%,100%{ background: $darker-peach }
+  25%{ background: $darker-pink }
+  50%{ background: $darker-purple }
+  75%{ background: $darker-indigo }
 }
 
 // Responsive text mixin
