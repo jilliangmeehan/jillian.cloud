@@ -65,15 +65,18 @@ section {
       ul {
         list-style: none;
         margin: 0;
-        padding-left: 0;
+        padding: 0;
         a {
           font-family: $mono;
-          margin-right: 2rem;
+          margin-right: 1.4rem;
           display: block;
           float: left;
           position: relative;
           @include responsive-font(3vw, $small-ish, $medium-ish, $regular);
           animation: text-gradient 60s ease infinite;
+          svg {
+            @include responsive-svg(3vw, $small-ish, $medium-ish, $regular);
+          }
         }
       }
     }
@@ -213,7 +216,7 @@ footer {
 @media (prefers-color-scheme: dark) {
  body {
    color: $light-text;
-   background: #323232;
+   background: #262626;
    animation: none;
  }
  a { color: $light-text; }

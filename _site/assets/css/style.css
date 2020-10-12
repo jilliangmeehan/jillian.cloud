@@ -54,10 +54,13 @@ section.head h1 { font-size: 24px; font-size: 5vw; }
 @media (max-width: 480px) { section.head h1 { font-size: 24px; } }
 @media (min-width: 960px) { section.head h1 { font-size: 48px; } }
 section.head nav { margin-top: 2rem; }
-section.head nav ul { list-style: none; margin: 0; padding-left: 0; }
-section.head nav ul a { font-family: "Fantasque Sans Mono", mono; margin-right: 2rem; display: block; float: left; position: relative; font-size: 18px; font-size: 3vw; animation: text-gradient 60s ease infinite; }
+section.head nav ul { list-style: none; margin: 0; padding: 0; }
+section.head nav ul a { font-family: "Fantasque Sans Mono", mono; margin-right: 1.4rem; display: block; float: left; position: relative; font-size: 18px; font-size: 3vw; animation: text-gradient 60s ease infinite; }
 @media (max-width: 533.3333333333px) { section.head nav ul a { font-size: 16px; } }
 @media (min-width: 666.6666666667px) { section.head nav ul a { font-size: 20px; } }
+section.head nav ul a svg { height: 18px; width: 18px; height: 3vw; width: 3vw; }
+@media (max-width: 533.3333333333px) { section.head nav ul a svg { height: 16px; width: 16px; } }
+@media (min-width: 666.6666666667px) { section.head nav ul a svg { height: 20px; width: 20px; } }
 section.work { position: relative; }
 section.work header { position: absolute; top: calc(12vh + 10%); left: -8%; -webkit-transform-origin: 0 0; -moz-transform-origin: 0 0; -ms-transform-origin: 0 0; -o-transform-origin: 0 0; -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); }
 section.work header h3 { margin: 0; opacity: 0.5; font-family: "Fantasque Sans Mono", mono; font-size: 36px; animation: text-gradient 60s ease infinite; }
@@ -94,7 +97,7 @@ footer p { font-family: "Fantasque Sans Mono", mono; font-size: 18px; font-size:
 
 @media screen and (min-width: 740px) { section.work .flex .item { max-width: 30vw; } }
 @media screen and (min-width: 980px) { section.work .flex .item { max-width: 20vw; } }
-@media (prefers-color-scheme: dark) { body { color: #E9E9E9; background: #323232; animation: none; }
+@media (prefers-color-scheme: dark) { body { color: #E9E9E9; background: #262626; animation: none; }
   a { color: #E9E9E9; }
   svg { animation: dm-text-gradient 60s ease infinite; }
   .gradient-link { animation: dm-text-gradient 60s ease infinite; }

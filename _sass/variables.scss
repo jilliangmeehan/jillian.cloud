@@ -154,3 +154,31 @@ $root-color: text-gradient 60s ease infinite;
 
   font-size: $responsive;
 }
+
+@mixin responsive-svg($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    height: $min;
+    width: $min;
+  }
+
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      height: $max;
+      width: $max;
+    }
+  }
+
+  @if $fallback {
+    height: $fallback;
+    width: $fallback;
+  }
+
+  height: $responsive;
+  width: $responsive;
+}
