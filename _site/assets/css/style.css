@@ -40,7 +40,7 @@ p { font-family: "Open Sauce", "Avenir", sans-serif; margin-top: 0; line-height:
 a { position: relative; display: inline-block; color: black; text-decoration: none; }
 a .letter { display: inline-block; line-height: 1em; }
 
-p a:before { content: ''; position: absolute; width: 112%; height: 100%; top: 0; left: -6%; z-index: -1; -webkit-mask-image: url("../underline.svg"); animation: mask-gradient 60s ease infinite; }
+section p a:before { content: ''; position: absolute; width: 112%; height: 100%; top: 0; left: -6%; z-index: -1; -webkit-mask-image: url("../underline.svg"); animation: mask-gradient 60s ease infinite; }
 
 svg { animation: text-gradient 60s ease infinite; }
 
@@ -87,7 +87,7 @@ section.hi .card .item p.emoji { font-size: 24px; font-size: 5vw; }
 section.hi.blm .item { max-width: 500px; }
 
 footer { margin: 2%; }
-footer p { font-family: "Fantasque Sans Mono", mono; font-size: 18px; font-size: 1.2vw; animation: text-gradient 60s ease infinite; }
+footer p { font-family: "Fantasque Sans Mono", mono; font-size: 18px; font-size: 1.2vw; }
 @media (max-width: 1333.3333333333px) { footer p { font-size: 16px; } }
 @media (min-width: 1666.6666666667px) { footer p { font-size: 20px; } }
 

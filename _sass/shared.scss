@@ -28,7 +28,7 @@ a {
     line-height: 1em;
   }
 }
-p a {
+section p a {
   &:before {
     content: '';
     position: absolute;
@@ -184,7 +184,6 @@ footer {
   p {
     font-family: $mono;
     @include responsive-font(1.2vw, $small-ish, $medium-ish, $regular);
-    animation: text-gradient 60s ease infinite;
   }
 }
 
