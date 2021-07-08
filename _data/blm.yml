@@ -1,0 +1,85 @@
+- title: email2act
+  subtitle: send emails
+  description: email templates to send to government officials in different cities asking them to act on the actions of their police departments. (⚠️ change the subject line + a few lines of the email so it doesn't get filtered out!)
+  url: https://www.email2act.com
+  emoji: 📧
+  goal-code: AIF29E5N
+
+- title: defund 12
+  subtitle: send emails
+  description: email government officials and council members in different cities to reallocate police budgets toward education, social services, and dismantling racial inequality. (⚠️ change the subject line + a few lines of the email so it doesn't get filtered out!)
+  url: https://defund12.org
+  emoji: 📧
+  goal-code: ORS24DFM
+
+- title: justice for elijah mcclain
+  subtitle: call, email, donate, petition
+  description: a resource for ways to demand justice for elijah mcclain by emailing and calling aurora government officials, signing petitions, and donating to his mother's gofundme.
+  url: https://linktr.ee/Justiceforelijahmcclain
+  emoji: 📝
+
+- title: for breonna
+  subtitle: say her name
+  description: a website that makes it easy to call, email, or schedule a reminder to call & email to get justice for breonna taylor.
+  url: https://www.forbreonna.com
+  emoji: 📝
+  goal-code: ZFUQY79G
+
+- title: creative ecosystems supporting black folks
+  subtitle: fundraisers, grants, and mutual aid
+  description: a growing list of funds supporting black folks nationwide, with links to to donate.
+  url: https://docs.google.com/spreadsheets/d/1VHrlB9u6RpGjZK_SW-JKf7t-QehBdBF7EVF8Qd-j02s/edit#gid=1584271755
+  emoji: 💸
+
+- title: bail funds
+  subtitle: donate
+  description: donate to 37 bail funds across the country at once.
+  url: https://secure.actblue.com/donate/bail_funds_george_floyd
+  emoji: 💸
+  goal-code: FH2YCFYW
+
+- title: more bail funds
+  subtitle: donate
+  description: a list of nationwide bail funds to donate to individually.
+  url: https://bailfunds.github.io/
+  emoji: 💸
+  goal-code: HYVGC9VM
+
+- title: more ways to help
+  subtitle: black lives matter
+  description: lots of resources for signing petitions, texting or calling your representatives, donating, protesting, and more.
+  url: https://blacklivesmatters.carrd.co
+  emoji: 💖
+  goal-code: EVKLKWMT
+
+- title: one anti-racist action a day
+  subtitle: subscribe
+  description: a newsletter that sends one anti-racist action you can take every day—a petition to sign, an email to send, etc.
+  url: https://oneaction.today
+  emoji: 💌
+
+- title: how to make an sms bot
+  subtitle: no coding required
+  description: a step-by-step guide to building sms bots using google sheets and twilio, for mutual aid funds and organizers who want to get in touch with their community via text.
+  url: https://docs.google.com/document/d/1VzUsLofQVlP68wWKzUAmFO701I14hZpBZLIml1aWs7E/edit
+  emoji: 📱
+
+- title: action at work
+  subtitle: take action
+  description: a doc of quick actionable items you can do from your desk, educational anti-racism resources, and free healing resources for BIPOC.
+  url: https://docs.google.com/document/d/16oRQR3rVIFXVfj2Gv5nTjVVJDAVJQiqTcUoplX6uyws/edit
+  emoji: 📋
+  goal-code: B47XWKMI
+
+- title: anti-racism resources
+  subtitle: start learning
+  description: a google doc full of articles and books to read, podcasts to listen to, videos to watch, and accounts to follow on social media to start engaging with anti-racism work.
+  url: https://docs.google.com/document/d/1BRlF2_zhNe86SGgHa6-VlBO-QgirITwCTugSfKie5Fs/preview?pru=AAABcnb5mB8*DxXs7K_umbRHlS1kzEln3g
+  emoji: 📋
+  goal-code: WLFJYMT9
+
+- title: social change roles reading list
+  subtitle: find your role
+  description: an overview of the different roles you can play in a social change ecosystem, and an anti-racist reading list for each role.
+  url: https://medium.com/@Aliya_Nealy/a-blm-x-social-change-roles-reading-list-447b87b4513d
+  emoji: 📖
