@@ -180,7 +180,7 @@ section {
 }
 
 footer {
-  padding: 2% 2% 10%;
+  padding: 2% 2% 5%;
   p {
     font-family: $mono;
     @include responsive-font(1.2vw, $small-ish, $medium-ish, $regular);
