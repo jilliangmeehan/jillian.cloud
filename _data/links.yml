@@ -1,3 +1,8 @@
+- title: black lives matter
+  subtitle: ways to help
+  url: /blm
+  emoji: 💞
+
 - title: my work
   subtitle: jillian.cloud
   url: /index
@@ -7,6 +12,11 @@
   subtitle: a zine about snacks
   url: https://snaxreport.com
   emoji: 🍭
+
+- title: give with us
+  subtitle: help us donate
+  url: https://givewith.us
+  emoji: 💸
 
 - title: letters to summer
   subtitle: my newsletter
