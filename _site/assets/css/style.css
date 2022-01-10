@@ -86,7 +86,7 @@ section.hi .card .item p.emoji { font-size: 24px; font-size: 5vw; }
 @media (min-width: 720px) { section.hi .card .item p.emoji { font-size: 36px; } }
 section.hi.blm .item { max-width: 500px; }
 
-footer { margin: 2%; }
+footer { padding: 2% 2% 5%; }
 footer p { font-family: "Fantasque Sans Mono", mono; font-size: 18px; font-size: 1.2vw; }
 @media (max-width: 1333.3333333333px) { footer p { font-size: 16px; } }
 @media (min-width: 1666.6666666667px) { footer p { font-size: 20px; } }
