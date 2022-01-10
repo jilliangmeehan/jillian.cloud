@@ -103,4 +103,5 @@ footer p { font-family: "Fantasque Sans Mono", mono; font-size: 18px; font-size:
   .gradient-link { animation: dm-text-gradient 60s ease infinite; }
   p a:before { animation: dm-mask-gradient 60s ease infinite; }
   section.head nav ul a { animation: dm-text-gradient 60s ease infinite; }
-  section.hi .card .item p { animation: dm-text-gradient 60s ease infinite; } }
+  section.hi .card .item p { animation: dm-text-gradient 60s ease infinite; }
+  section p a:before { animation: dm-mask-gradient 60s ease infinite; } }
