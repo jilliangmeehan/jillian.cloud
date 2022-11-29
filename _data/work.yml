@@ -2,28 +2,35 @@
   url: https://jillian.garden
   description: 🌱 tending to my thoughts here, on a little blog.
   l1-url: https://jillian.garden
-  l1-copy: read the archive → 
+  l1-copy: read the archive!
 
 - title: letters to summer
   url: https://letterstosummer.com
   description: 💌 a very cool newsletter that i write with my friend summer. currently on hiatus but will be back super soon!!
   l1-url: https://letterstosummer.com/subscribe
-  l1-copy: Subscribe → 
-
-- title: uses this
-  url: https://usesthis.com/interviews/jillian.meehan/
-  description: 💻 wrote a lil thing about my work setup for a site i like a lot.
-  l1-url: https://usesthis.com/interviews/jillian.meehan/
-  l1-copy: read it → 
-  
-- title: workspaces.xyz
-  url: https://www.workspaces.xyz/p/090-jillian-meehan
-  description: 💾 here's another look at my setup for a newsletter about people's workspaces.
-  l1-url: https://www.workspaces.xyz/p/090-jillian-meehan
-  l1-copy: take a look → 
+  l1-copy: Subscribe! 
 
 - title: snax
   url: https://snaxreport.com
   description: 📒 made this single-issue zine a while ago, with original essays, poetry, & illustrations exploring the universal (and beloved) experience of snacking.
   l1-url: https://snaxreport.com/pdf
-  l1-copy: get Issue One → 
+  l1-copy: get Issue One! 
+
+- title: uses this
+  url: https://usesthis.com/interviews/jillian.meehan/
+  description: 💻 wrote a lil thing about my work setup for a site i like a lot.
+  l1-url: https://usesthis.com/interviews/jillian.meehan/
+  l1-copy: read it! 
+  
+- title: workspaces.xyz
+  url: https://www.workspaces.xyz/p/090-jillian-meehan
+  description: 💾 here's another look at my setup for a newsletter about people's workspaces.
+  l1-url: https://www.workspaces.xyz/p/090-jillian-meehan
+  l1-copy: take a look! 
+  
+- title: twitch
+  url: https://twitch.tv/jillianstreams
+  description: 🎮 i stream a couple of times a week on twitch—come hang out sometime.
+  l1-url: https://twitch.tv/jillianstreams
+  l1-copy: say hello!
+
